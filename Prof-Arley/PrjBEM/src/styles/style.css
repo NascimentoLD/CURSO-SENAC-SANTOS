@@ -1,0 +1,33 @@
+* {
+    box-sizing: 
+}
+/*.menu */
+
+.menu {
+    font-size:20px;
+    list-style-type: none;
+    display: flex;
+    background-color: #bebebe;
+    justify-content: space-evenly;
+}
+
+.menu__item {
+    display: inline;
+}
+
+.menu__link {
+    display: block;
+    color: black;  
+    padding: 30px 50px;
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    color: white;    
+    background-color: #444;
+    border-bottom: 5px solid #444;
+}
+
+.menu__link--active {
+    border-bottom: 5px solid black;
+}

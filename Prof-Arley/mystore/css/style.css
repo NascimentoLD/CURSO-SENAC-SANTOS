@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar{
+    background-color: #D5DADA;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 80px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-bar--brand-logo{
+    width: auto;
+    height: 8vh;
+}
+
+.top-bar--brand{
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-bar--login{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 10px;
+}
+
+.top-bar--login-logo{
+    width: auto;
+    height: 4vh;
+}
+
+.top-bar--login-btn-entrar{
+    color: #ffff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.top-bar--login-btn-entrar:hover{
+    color: red;
+}
+
+.conteudo-principal{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.conteudo-principal--section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 992px;
+    min-width: 320px;
+    gap: 50px;
+    border-bottom: 2px solid black;
+    padding-bottom: 30px;
+}
+
+.conteudo-principal--title{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 54px;
+    margin-bottom: 15px;
+}
+
+.conteudo-principak--paragrafy{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.conteudo-principal-btn{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: white;
+    background-color: #E50B22;
+    padding: 15px;
+    width: 270px;
+    border-radius: 10px;
+}
+
+.conteudo-principal-btn:hover{
+    color: black;
+    background-color: #ff6262;
+}
+
+.conteudo-principal--img{
+    width: 500px;
+    height: auto;
+}

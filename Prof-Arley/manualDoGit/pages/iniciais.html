@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos Globais</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+
+<body>
+    <header class="content">
+        <div class="logo">
+            <a href="./index.html"><img src="../img/logoGit.png" alt="logotipo Git"></a>
+        </div>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#acompanhamento">Comandos Iniciais</a></li>
+                <li><a href="../pages/adicionais.html">Funções Adicionais</a></li>
+                <li><a href="https://git-scm.com/" target="_blank">Git Oficial</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="first">
+        <section class="diferencas">
+            <h1>Comandos de inicialização do Projeto</h1>
+            <ul>
+                <li>git init</li>
+                <p>Iniciamos o controle do git dentro da pagina ( Fazendo o monitoramento da pagina ), toda e qualquer
+                    alteração a partir de agora ficara registrado.</p>
+
+                <li>git branch</li>
+                <p>São versões do desenvolvimento, onde podemos acompanhar cada feito do projeto.</p>
+
+                <li>git config --global user.name “Pedro”</li>
+                <p>Server Para configurar e registrar o nome do usuário dentro do git.</p>
+
+                <li>git config --global user.email “joaopedro863@outlook.com”</li>
+                <p>Assim registramos um e-mail no git.</p>
+                <p>Podemos usar ( - -local ), que serve para cada repositório. Já o ( - -global ) é para todos os
+                    repositórios, temos também o ( Sistem ), serve para todos usuários que locarem na maquina.</p>
+
+                <li>git config --global init.defautbranch</li>
+                <p>Definimos qual será a raiz do nosso repositório, main ou master. </p>
+            </ul>
+
+
+            <div class="basic">
+                <a id="acompanhamento"></a>
+                <h3>Comandos para inicialização de acompanhamento</h3></a>
+
+                <ul>
+                    <li>git status</li>
+                    <p>Mostra quais alterações foram feitas no repositório.</p>
+
+                    <li>git add + “o nome do arquivo”</li>
+                    <p>Se criarmos um arquivo ou pasta e queremos que o git fique de olho (registre) as alterações,
+                        acompanhe o arquivo, usamos esse comando.</p>
+
+                    <li>git add .</li>
+                    <p>Usamos para rastrear tudo oque está no repositório.</p>
+
+                    <li>git commit</li>
+                    <p> Comita tudo oque foi feito usando um editor passando a mensagem (Quase nunca usar)</p>
+
+                    <li>git log</li>
+                    <p>Mostra quem alterou, quando alterou e oque alterou do repositório e aparece o commit feito.</p>
+
+                    <li>git commit -m “Mensagem que irá aparecer para quem ver oque foi alterado (comitado)”</li>
+                    <p>Permite passar uma mensagem com informações de alteração detalhada.</p>
+
+                    <li>git commit -a -m ”Mensagem que irá aparecer para quem ver oque foi alterado (comitado”</li>
+                    <p>Adiciona o conteúdo e faz o commit ( Fazendo o commit e o add ).</p>
+
+                    <li>git remote --v</li>
+                    <p>Mostra a qual repositório remoto está ligado.</p>
+
+                    <li>git remote add origin https://github/nasicmentold.com</li>
+                    <p>Sempre será usado para adicionar o endereço remoto ( Ligar o repositório local, com o repositório
+                        remoto. )</p>
+                </ul>
+
+                <!--  -->
+
+                <h3>O que fazer depois de commitar?</h3>
+                <ul>
+                    <li>Chegamos na hora de jogar as informações realizadas para o GITHUB então segue abaixo os
+                        comandos:</li>
+
+                    <li>git push</li>
+                    <p>Empurra o arquivo local, para o git remoto.</p>
+
+                    <li>git push origin master</li>
+                    <p>Empurra o que está na branch master para o origin que é o remoto.</p>
+
+                    <li>git pull</li>
+                    <p>atualizar o local(máquina) com as informações do remoto (hub/github)</p>
+
+                    <li>git pull origin master</li>
+                    <p>Puxamos a ultima versão do arquivo remoto, assim atualizamos nosso repositório local.</p>
+                    <p>obs: origin/master, origin/HEAD (é o que está no github) obs: origin (remoto) head -> master
+                        (local)</p>
+
+                    <li>O por que commitar?</li>
+                    <p>Ele nada mais é que levar as mudanças de um ambiente local para o repositório no github,
+                        permitindo ainda a inserção de uma mensagem descritiva. Assim, a cada mudança ou finalização de
+                        uma tarefa, a pessoa desenvolvedora pode submeter seus feitos e deixar claro para as outras
+                        pessoas o que ela fez.</p>
+
+                    <h3>Git Local Temos 3 Status</h3>
+                    <li>X - Não rastreado (untracked.files)</li>
+                    <li>add - Fazemos com que a posta seja registrada.</li>
+                    <li>commit - Confirmamos as alterações feitas.</li>
+
+                    <div class="ciclo">
+                        <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--BHmv-N0F--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/iwdks64pvy4rr4q1jpru.png"
+                            alt="">
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <h3>Dev Desenvolvedor - <a href="https://github.com/NascimentoLD" target="_blank">Pedro Nascimento LD</a></h3>
+            <p>Atividade realizada dentro de sala de aula com o Prof-Arley</p>
+        </div>
+    </footer>
+</body>
+
+</html>
