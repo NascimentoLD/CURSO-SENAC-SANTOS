@@ -40,15 +40,29 @@ header{
 .list-item{
     display: flex;
     justify-content: space-between;
+    width: 500px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.list-item a:hover{
+    color: #7398F0;
+    border-bottom: 5px solid #7398F0;
+    padding-bottom: 37px;
+}
+
+.container{
+    margin: 0 auto;
     max-width: 992px;
     min-width: 320px;
 }
 
 .apresentacao{
-    height: 60vh;
+    padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 70px;
 }
 
 .apresentacao .txt-apresentacao{
@@ -78,4 +92,79 @@ header{
 .btn:hover{
     color: black;
     background-color: #7398F0;
+}
+
+.quem-somos{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 70px;
+}
+
+.quem-somos__title{
+    color: #122A57;
+    font-size: 48px;
+    margin-bottom: 30px;
+    border-left: 5px solid #122A57;
+    padding-left: 10px;
+}
+
+.quem-somos__paragrafo{
+    line-height: 23px;
+}
+
+.container-externo{
+    width: 100%;
+    background-color: #122A57;
+}
+
+#servicos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#servicos h2{
+    color: #ffff;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.list-servicos{
+    color: #ffff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-servicos p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.list-servicos a{
+    color: #122A57;
+    background-color: #ffff;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-servicos a:hover{
+    background-color: #7398F0;
+    color: #ffff;
+}
+
+.list-servicos img{
+    margin-bottom: 20px;
 }
