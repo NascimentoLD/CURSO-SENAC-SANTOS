@@ -50,21 +50,20 @@ nav{
 .navbar-items li a{
     color: #fff;
     text-decoration: none;
-    transition: 1.5s;
 }
 
 .navbar-items li a:hover {
-    color: #ccc;
+    color: rgb(128, 128, 128);
 }
 
 .defaulf-btn{
     padding: 15px 20px;
-    background-color: #2CC76A;
+    background-color: green;
     border-radius: 10px;
 }
 
 .defaulf-btn:hover{
-    background-color: #3d9c63;
+    background-color: #2CC76A;
 }
 
 .main-banner{
@@ -98,8 +97,175 @@ nav{
 
 .specialties-container ul{
     display: flex;
-    width: 100%;
     width: 90%;
     margin: 0 auto;
     list-style: none;
+}
+
+.specialties-container ul li{
+    text-align: center;
+    padding: 20px;
+}
+
+.specialties-container ul li h3{
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.specialties-container ul li p{
+    line-height: 24px;
+    color: #70747A;
+}
+
+.fa-solid{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.fa-shield-halved{
+    color: #2CC76A;
+}
+
+.fa-rocket{
+    color: #EF3F29;
+}
+
+.fa-comments{
+    color: #EF8F29;
+}
+
+.pricing-container{
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.pricing-container h2{
+    font-size: 48px;
+    margin-top: 0;
+}
+
+.pricing-container p{
+    font-size: 20px;
+}
+
+.plans-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px auto 0;
+    width: 90%;
+}
+
+.plan{
+    width: 350px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.plan ul{
+    list-style: none;
+}
+
+.plan li{
+    height: 50px;
+    line-height: 50px;
+    background-color: #E8E9EA;
+    color: #333;
+}
+
+.plan .price{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    line-height: 160px;
+    font-size: 24px;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+}
+
+.plan .plan-name{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #202b34;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.plan .plan-btn{
+    background-color: green;
+    color: #fff;
+    font-size: 24px;
+    height: 75px;
+    line-height: 75px;
+    cursor: pointer;
+}
+
+.plan .plan-btn:hover{
+    background-color: #2CC76A;
+}
+
+.plan .senior{
+    background-color: rgb(218, 84, 84);
+}
+
+.plan .senior-btn{
+    background-color: rgb(136, 1, 1);
+}
+
+.plan .senior-btn:hover{
+    background-color: red;
+}
+
+.searchdomain-container{
+    padding: 5em 0;
+    text-align: center;
+    background-color: #34454e;
+}
+
+.searchdomain-container h2{
+    font-size: 42px;
+    color: #FFF;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.searchdomain-container p{
+    font-size: 24px;
+    color: #D5D5D5;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.searchdomain-container input{
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+}
+
+.searchdomain-container input[type=text]{
+    margin-bottom: 30px;
+    width: 60%;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.searchdomain-container input[type=submit]{
+    margin-bottom: 25px;
+    padding: 20px 40px;
+    background-color: green;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.searchdomain-container input[type=submit]:hover{
+    background-color: #2CC76A;
 }
