@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,16 +11,172 @@
 }
 
 header{
-    background-color: red;
+    background-image: url(../img/fundo-preto-com-textura-de-fibra-de-carbono_1017-33436.avif);
     width: 100%;
     height: 90px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 3em;
 }
 
 .logo{
     width: 125px;
     height: auto;
-    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+}
+
+
+
+.menu-navbar a{
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    transition: 1s;
+}
+
+.menu-navbar a:hover{
+    color: #E70112;
+    border-bottom: 5px solid #E70112;
+    padding-bottom: 26.2px;
+}
+
+.mario{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 992px;
+    margin: 0 auto;
+    padding-bottom: 9em;
+    border-bottom: 2px solid black;
+    margin-bottom: 8em;
+}
+
+.image__mario{
+    width: 496px;
+}
+
+.image__mario img{
+    width: 70%;
+}
+
+.mario__text{
+    width: 496px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mario__title{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 5em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.mario__paragraph{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1.8em;
+}
+
+.mario__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E70112;
+    border-radius: 50px;
+    padding: 15px 50px 15px 50px;
+    width: 50%;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.384);
+}
+
+.mario__btn:hover{
+    background-color: #630007;
+}
+
+.mario__text a{
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Luigi */
+
+.luigi{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    width: 992px;
+    margin: 0 auto;
+}
+
+.image__luigi{
+    width: 496px;
+}
+
+.image__luigi img{
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
+.luigi__text{
+    width: 496px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.luigi__title{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 5em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.luigi__paragraph{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1.8em;
+}
+
+.luigi__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E70112;
+    border-radius: 50px;
+    padding: 15px 50px 15px 50px;
+    width: 50%;
+    box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.384);
+}
+
+.luigi__btn:hover{
+    background-color: #630007;
+}
+
+.luigi__text a{
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
