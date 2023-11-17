@@ -10,6 +10,26 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url(../img/Background-image-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: black;
+    opacity: .8;
+    height: auto;
+}
+
+/* Header Menu */
+
 header{
     background-image: url(../img/fundo-preto-com-textura-de-fibra-de-carbono_1017-33436.avif);
     width: 100%;
@@ -53,130 +73,135 @@ header{
     padding-bottom: 26.2px;
 }
 
-.mario{
+/* Section Personagens */
+
+.personagem{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 992px;
+    max-width: 992px;
+    min-width: 320px;
     margin: 0 auto;
-    padding-bottom: 9em;
-    border-bottom: 2px solid black;
-    margin-bottom: 8em;
+    margin-top: 5em;
+    border-bottom: 2px solid #ffff;
+    padding-bottom: 5em;
 }
 
-.image__mario{
-    width: 496px;
-}
-
-.image__mario img{
-    width: 70%;
-}
-
-.mario__text{
-    width: 496px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.mario__title{
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 5em;
-    text-align: center;
-    margin-bottom: 0.5em;
-}
-
-.mario__paragraph{
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 1.8em;
-}
-
-.mario__btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #E70112;
-    border-radius: 50px;
-    padding: 15px 50px 15px 50px;
-    width: 50%;
-    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.384);
-}
-
-.mario__btn:hover{
-    background-color: #630007;
-}
-
-.mario__text a{
-    color: #ffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-}
-
-/* Luigi */
-
-.luigi{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.personagem:nth-child(even){
     flex-direction: row-reverse;
-    width: 992px;
-    margin: 0 auto;
 }
 
-.image__luigi{
+.personagem:last-child{
+    border-bottom: none;
+}
+
+.personagem__image{
     width: 496px;
 }
 
-.image__luigi img{
-    width: 70%;
+.personagem__img{
+    width: 80%;
     margin: auto;
     display: block;
 }
 
-.luigi__text{
+.personagem__text{
     width: 496px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: #ffff;
 }
 
-.luigi__title{
+.personagem__title{
     font-family: 'Luckiest Guy', cursive;
     font-size: 5em;
     text-align: center;
     margin-bottom: 0.5em;
 }
 
-.luigi__paragraph{
+.personagem__paragraph{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 1.8em;
 }
 
-.luigi__btn{
+.personagem__btn{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #E70112;
     border-radius: 50px;
-    padding: 15px 50px 15px 50px;
     width: 50%;
-    box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.384);
+    height: 49px;
+    /* box-shadow: -5px 8px 10px rgba(255, 255, 255, 0.384); */
 }
 
-.luigi__btn:hover{
-    background-color: #630007;
+.personagem__btn:hover{
+    background-color: transparent;
+    border: 2px solid #FCD000;
 }
 
-.luigi__text a{
+.personagem__text a{
     color: #ffff;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
+}
+
+/* Footer */
+
+footer{
+    background-image: url(../img/fundo-preto-com-textura-de-fibra-de-carbono_1017-33436.avif);
+    width: 100%;
+    height: auto;
+    margin-top: 5em;
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-container__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 2.3em 0;
+}
+
+.footer-img{
+    width: 80px;
+    height: 80px;
+}
+
+.footer-container__title{
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+}
+
+.footer-container__paragraph{
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    margin: 1.3em 0;
+}
+
+.footer-menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin: 3em 0;
+}
+
+.footer-menu .fa-brands{
+    font-size: 2.5em;
+    color: #ffff;
 }
