@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body{
@@ -55,8 +56,6 @@ header{
     width: 450px;
 }
 
-
-
 .menu-navbar a{
     color: #ffff;
     text-decoration: none;
@@ -85,6 +84,7 @@ header{
     margin-top: 5em;
     border-bottom: 2px solid #ffff;
     padding-bottom: 5em;
+    gap: 30px;
 }
 
 .personagem:nth-child(even){
@@ -122,9 +122,10 @@ header{
 }
 
 .personagem__paragraph{
-    font-size: 20px;
+    font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 1.8em;
+    line-height: 32px;
 }
 
 .personagem__btn{
@@ -140,7 +141,7 @@ header{
 
 .personagem__btn:hover{
     background-color: transparent;
-    border: 2px solid #FCD000;
+    border: 2px solid #E70112;
 }
 
 .personagem__text a{
