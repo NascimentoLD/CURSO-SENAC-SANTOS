@@ -269,3 +269,62 @@ nav{
 .searchdomain-container input[type=submit]:hover{
     background-color: #2CC76A;
 }
+
+.contact-container{
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 2em;
+}
+
+.contact-container h2{
+    font-size: 36px;
+}
+
+.contact-container p{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-container input,
+.contact-container textarea{
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 auto 20px;
+}
+
+.contact-container textarea{
+    display: block;
+    margin: 0 auto;
+    width: 447px;
+    height: 150px;
+    margin-bottom: 2em;
+}
+
+.contact-container input[type=submit]{
+    display: block;
+    margin: 0 auto;
+    background-color: green;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.contact-container input[type=submit]:hover{
+    background-color: #2CC76A;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #34454E;
+    font-size: 2em;
+    height: 150px;
+    margin-top: 1em;
+}
+
+footer p{
+    color: #ffff;
+}
