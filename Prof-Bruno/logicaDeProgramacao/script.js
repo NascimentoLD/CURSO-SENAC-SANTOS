@@ -21,18 +21,85 @@
 
 // alert( 'O resultado da operação é: ' +soma);
 
-let aluno = prompt('Digite o nome e a serie do aluno: ')
 
-let prov1 = prompt('Digite a sua nota na primeira prova: ')
 
-let prov2 = prompt('Digite a sua nota na segunda prova: ')
 
-let prov3 = prompt('Digite a sua nota na terceira prova: ')
 
-let prov4 = prompt('Digite a sua nota na quarta prova: ')
+// let nt1 = prompt('Digite a sua nota na primeira prova: ')
 
-let notas;
+// let nt2 = prompt('Digite a sua nota na segunda prova: ')
 
-notas = (Number(prov1) + Number(prov2) + Number(prov3) + Number(prov4)) /4;
+// let nt3 = prompt('Digite a sua nota na terceira prova: ')
 
-alert(notas);
+// let nt4 = prompt('Digite a sua nota na quarta prova: ')
+
+// let media;
+
+// media = (Number(nt1) + Number(nt2) + Number(nt3) + Number(nt4)) /4;
+
+// alert('A media do aluno é: '+media);
+
+
+
+
+// let km = prompt('Digite quantos km foram rodados: ')
+
+// let dia = prompt('Digite por quantos dias o carro foi alugado: ')
+
+// let tarifa = 90;
+
+// let vlkm = 0.20;
+
+// let valor;
+
+// valor = (Number(km) * Number(vlkm)) + (Number(dia) * Number(tarifa));
+
+// alert('Valor a ser cobrado: ' +valor)
+
+// let dist = prompt("Digite a distância que deseja percorrer: ")
+
+// let vltotal;
+
+
+// if(dist <= 200){
+//     vltotal = Number(dist)*0.50;
+// } else{
+//     vltotal = Number(dist)*0.45;
+// }
+
+// alert(
+//     "O valor a ser pago é :" +vltotal
+// )
+
+
+
+// let nt1 = prompt("Digite a nota do primeiro semestre: ");
+// let nt2 = prompt("Digite a nota do segundo semestre: ");
+// let nt3 = prompt("Digite a nota do terceiro semestre: ");
+// let nt4 = prompt("Digite a nota do quarto semestre:" );
+
+// let media;
+
+// media = (Number(nt1) + Number(nt2) + Number(nt3) + Number(nt4))/4;
+
+// if(media <= 4.9){
+//     alert("Reprovado!\n" + "Sua nota é: " +media)
+// }else if(media >= 5.0 && media <6.9){
+//     alert("Recuperação \n" + "Sua nota é: " +media);
+// }else{
+//     alert("Parabéns você foi Aprovado! \n" + "Sua nota é: " + media)
+// }
+
+
+
+let name = prompt("Qual o nome do funcionario:");
+let salario = prompt("Qual o salario desse funcionario: ");
+let ano = prompt("Quantos anos esse funcionario trabalha na empresa: ");
+
+let reajuste;
+
+if(reajuste <= 3){
+    Number(salario)*0.03;
+} else if(reajuste >= 5 ){
+
+}
