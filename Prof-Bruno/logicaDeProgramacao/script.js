@@ -4,7 +4,6 @@
 
 // let num2 = prompt("Digite outro número:")
 
-// _______________________________________________________
 
 // let soma; 
 
@@ -165,31 +164,89 @@
 // _______________________________________________________
 
 
-let sal = prompt("Qual seu salario atual: ");
-let sexo = prompt("Qual seu gênero? M  para Masculino e F para Feminino ")
-let anos = prompt("Quantos anos você faz parte da empresa? ")
-let reajuste, salf;
+// let sal = prompt("Qual seu salario atual: ");
+// let sexo = prompt("Qual seu gênero? M  para Masculino e F para Feminino ")
+// let anos = prompt("Quantos anos você faz parte da empresa? ")
+// let reajuste, salf;
 
-sexo = sexo.toUpperCase();
+// sexo = sexo.toUpperCase();
 
-if(sexo == "F"){
-    if(anos <= 15){
-        reajuste = (Number(sal) * 0.05);
-    }else if(anos > 15 && anos <= 20){
-        reajuste = (Number(sal) * 0.120);
-    }else{
-        reajuste = (Number(sal) * 0.23);
+// if(sexo == "F"){
+//     if(anos <= 15){
+//         reajuste = (Number(sal) * 0.05);
+//     }else if(anos > 15 && anos <= 20){
+//         reajuste = (Number(sal) * 0.120);
+//     }else{
+//         reajuste = (Number(sal) * 0.23);
+//     }
+// }else if(sexo == "M"){
+//     if(anos <= 15){
+//         reajuste = (Number(sal) * 0.03);
+//     }else if(anos > 15 && anos <= 20){
+//         reajuste = (Number(sal) * 0.123);
+//     }else{
+//         reajuste = (Number(sal) * 0.25);
+//     }
+// }
+
+// salf = Number(sal) + reajuste;
+
+// alert("Seu Reajuste foi de: " + "R$" + reajuste + "\nSalario atual com o reajuste ficou: " + "R$" + salf);
+
+
+// _______________________________________________________
+
+
+// let altura = prompt("Digite a sua altura: ");
+// let peso = prompt("Digite seu peso: ");
+
+// // let imc = (peso/altura**2);
+
+// imc = Number(peso) / Number(altura) **2;
+
+// if(imc <= 18.5){
+//     alert("Abaixo do peso!" );
+// } else if( imc > 18.5 && imc <= 25){
+//     alert("Peso Ideal! ")
+// }else if(imc > 25 && imc <= 30){
+//     alert("Acima do peso! ")
+// }else if(imc > 30 && imc <= 40){
+//     alert("Obesidade! ")
+// }else{
+//     alert("Obesidade Mórbida!")
+// }
+
+// _______________________________________________________
+
+function mostrarTabuada(){
+    // Cria referencia aos elementos da pagina
+    let inNumero = document.getElementById('inNumero');
+    let outTabuada = document.getElementById('outTabuada');
+
+    // Converte o conteudo do campo inNumero
+    let numero = Number(inNumero.value)
+
+    if(numero == 0 || isNaN(numero)){
+        alert("Informe um número válido!")
+        inNumero.focus();
+        inNumero.value= "";
+        return;
     }
-}else if(sexo == "M"){
-    if(anos <= 15){
-        reajuste = (Number(sal) * 0.03);
-    }else if(anos > 15 && anos <= 20){
-        reajuste = (Number(sal) * 0.123);
-    }else{
-        reajuste = (Number(sal) * 0.25);
+
+    // Cria um variavel do tipo string, que irá concatenar a resposta 
+    let resposta = "";
+
+    //Cria um laço de repetição
+    for (let i = 1; i <= 10; i++){
+        // A variavel resposta vai acumulando os novos conteúdos
+        resposta = resposta + numero + " X " + i + " = " + numero * i + "\n"
     }
+
+    // O conteúdo da tag pre é alterado para exibir a tabuada do numero
+    outTabuada.textContent = resposta;
+
 }
 
-salf = Number(sal) + reajuste;
-
-alert("Seu Reajuste foi de: " + "R$" + reajuste + "\nSalario atual com o reajuste ficou: " + "R$" + salf);
+// Criar referência ao botão e após associar function ao evento click
+let btMostrar = document.getElementById('btMostrar');
+    btMostrar.addEventListener("click", mostrarTabuada)
