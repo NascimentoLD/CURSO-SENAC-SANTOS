@@ -248,5 +248,78 @@ function mostrarTabuada(){
 }
 
 // Criar referência ao botão e após associar function ao evento click
-let btMostrar = document.getElementById('btMostrar');
-    btMostrar.addEventListener("click", mostrarTabuada)
+//  let btMostrar = document.getElementById('btMostrar');
+    // btMostrar.addEventListener("click", mostrarTabuada)
+
+
+
+
+function listaNumeros(){
+    // Cria referencia aos elementos da pagina
+    let inNumero = document.getElementById('inNumero');
+    let outResposta = document.getElementById('outResposta');
+
+    // Converte o conteudo do campo inNumero
+    let numero = Number(inNumero.value);
+
+    if(numero == 0 || isNaN(numero)){
+        alert("Informe um número valido!");
+        inNumero.focus();
+        inNumero.value = "";
+        return;
+    }
+
+    let resposta = "Entre " + numero + " e 1: ";
+
+    //Cria um laço de repetição
+    for (let i = numero; i > 0; i = i -1){
+        resposta = resposta + i + ", ";
+
+        // O conteúdo da tag pre é alterado para exibir a tabuada do numero
+        outResposta.textContent = resposta;
+    }
+
+}
+
+// let btDecrescer = document.getElementById("btDecrescer");
+// btDecrescer.addEventListener("click", listaNumeros)
+
+
+function numeros(){
+    let inNumero = document.getElementById('inNumero');
+    let outResposta = document.getElementById('outResposta');
+
+    let numero = Number(inNumero.value);
+
+    if(numero == 0 || isNaN(numero)){
+        alert("Informe um número valido!");
+        inNumero.focus();
+        inNumero.value = "";
+        return;
+    }
+
+    let resposta = "contagem decrescente" + " de 10 em 10: ";
+
+    for(let i = numero; i > 0; i = i - 10){
+        resposta = resposta + i + ", " ;
+
+        outResposta.textContent = resposta;
+    }
+}
+
+
+// let btDecrescer = document.getElementById("btDecrescer");
+// btDecrescer.addEventListener("click" , numeros);
+
+
+let maiorPeso;
+
+for(let i = 1; i <= 8; i++){
+    let peso = Number(prompt("Digite seu peso: "));
+
+    if(peso > 100){
+        maiorPeso = peso;
+    }
+}
+
+alert("Peso " + maiorPeso);
