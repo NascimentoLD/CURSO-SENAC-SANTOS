@@ -218,108 +218,194 @@
 
 // _______________________________________________________
 
-function mostrarTabuada(){
-    // Cria referencia aos elementos da pagina
-    let inNumero = document.getElementById('inNumero');
-    let outTabuada = document.getElementById('outTabuada');
+// function mostrarTabuada(){
+//     // Cria referencia aos elementos da pagina
+//     let inNumero = document.getElementById('inNumero');
+//     let outTabuada = document.getElementById('outTabuada');
 
-    // Converte o conteudo do campo inNumero
-    let numero = Number(inNumero.value)
+//     // Converte o conteudo do campo inNumero
+//     let numero = Number(inNumero.value)
 
-    if(numero == 0 || isNaN(numero)){
-        alert("Informe um número válido!")
-        inNumero.focus();
-        inNumero.value= "";
-        return;
-    }
+//     if(numero == 0 || isNaN(numero)){
+//         alert("Informe um número válido!")
+//         inNumero.focus();
+//         inNumero.value= "";
+//         return;
+//     }
 
-    // Cria um variavel do tipo string, que irá concatenar a resposta 
-    let resposta = "";
+//     // Cria um variavel do tipo string, que irá concatenar a resposta 
+//     let resposta = "";
 
-    //Cria um laço de repetição
-    for (let i = 1; i <= 10; i++){
-        // A variavel resposta vai acumulando os novos conteúdos
-        resposta = resposta + numero + " X " + i + " = " + numero * i + "\n"
-    }
+//     //Cria um laço de repetição
+//     for (let i = 1; i <= 10; i++){
+//         // A variavel resposta vai acumulando os novos conteúdos
+//         resposta = resposta + numero + " X " + i + " = " + numero * i + "\n"
+//     }
 
-    // O conteúdo da tag pre é alterado para exibir a tabuada do numero
-    outTabuada.textContent = resposta;
+//     // O conteúdo da tag pre é alterado para exibir a tabuada do numero
+//     outTabuada.textContent = resposta;
 
-}
+// }
 
-// Criar referência ao botão e após associar function ao evento click
-//  let btMostrar = document.getElementById('btMostrar');
-    // btMostrar.addEventListener("click", mostrarTabuada)
-
-
+// // Criar referência ao botão e após associar function ao evento click
+// //  let btMostrar = document.getElementById('btMostrar');
+//     // btMostrar.addEventListener("click", mostrarTabuada)
 
 
-function listaNumeros(){
-    // Cria referencia aos elementos da pagina
-    let inNumero = document.getElementById('inNumero');
-    let outResposta = document.getElementById('outResposta');
-
-    // Converte o conteudo do campo inNumero
-    let numero = Number(inNumero.value);
-
-    if(numero == 0 || isNaN(numero)){
-        alert("Informe um número valido!");
-        inNumero.focus();
-        inNumero.value = "";
-        return;
-    }
-
-    let resposta = "Entre " + numero + " e 1: ";
-
-    //Cria um laço de repetição
-    for (let i = numero; i > 0; i = i -1){
-        resposta = resposta + i + ", ";
-
-        // O conteúdo da tag pre é alterado para exibir a tabuada do numero
-        outResposta.textContent = resposta;
-    }
-
-}
-
-// let btDecrescer = document.getElementById("btDecrescer");
-// btDecrescer.addEventListener("click", listaNumeros)
 
 
-function numeros(){
-    let inNumero = document.getElementById('inNumero');
-    let outResposta = document.getElementById('outResposta');
+// function listaNumeros(){
+//     // Cria referencia aos elementos da pagina
+//     let inNumero = document.getElementById('inNumero');
+//     let outResposta = document.getElementById('outResposta');
 
-    let numero = Number(inNumero.value);
+//     // Converte o conteudo do campo inNumero
+//     let numero = Number(inNumero.value);
 
-    if(numero == 0 || isNaN(numero)){
-        alert("Informe um número valido!");
-        inNumero.focus();
-        inNumero.value = "";
-        return;
-    }
+//     if(numero == 0 || isNaN(numero)){
+//         alert("Informe um número valido!");
+//         inNumero.focus();
+//         inNumero.value = "";
+//         return;
+//     }
 
-    let resposta = "contagem decrescente" + " de 10 em 10: ";
+//     let resposta = "Entre " + numero + " e 1: ";
 
-    for(let i = numero; i > 0; i = i - 10){
-        resposta = resposta + i + ", " ;
+//     //Cria um laço de repetição
+//     for (let i = numero; i > 0; i = i -1){
+//         resposta = resposta + i + ", ";
 
-        outResposta.textContent = resposta;
-    }
-}
+//         // O conteúdo da tag pre é alterado para exibir a tabuada do numero
+//         outResposta.textContent = resposta;
+//     }
+
+// }
+
+// // let btDecrescer = document.getElementById("btDecrescer");
+// // btDecrescer.addEventListener("click", listaNumeros)
+
+
+// function numeros(){
+//     let inNumero = document.getElementById('inNumero');
+//     let outResposta = document.getElementById('outResposta');
+
+//     let numero = Number(inNumero.value);
+
+//     if(numero == 0 || isNaN(numero)){
+//         alert("Informe um número valido!");
+//         inNumero.focus();
+//         inNumero.value = "";
+//         return;
+//     }
+
+//     let resposta = "contagem decrescente" + " de 10 em 10: ";
+
+//     for(let i = numero; i > 0; i = i - 10){
+//         resposta = resposta + i + ", " ;
+
+//         outResposta.textContent = resposta;
+//     }
+// }
 
 
 // let btDecrescer = document.getElementById("btDecrescer");
 // btDecrescer.addEventListener("click" , numeros);
 
 
-let maiorPeso;
+// let maiorPeso;
 
-for(let i = 1; i <= 8; i++){
-    let peso = Number(prompt("Digite seu peso: "));
+// for(let i = 1; i <= 8; i++){
+//     let peso = Number(prompt("Digite seu peso: "));
 
-    if(peso > 100){
-        maiorPeso = peso;
+//     if(peso > maiorPeso){
+//         maiorPeso = peso;
+//     }
+// }
+
+// alert("Peso " + maiorPeso);
+
+// let sal;
+// let filhos;
+// let media;
+// let somasal = 0;
+// let somaf = 0;
+
+// for(let i = 1; i <= 2; i++){
+//     let sal = Number(prompt("Digite seu salario: "));
+//     let filhos = Number(prompt("Digite quantos filhos você tem: "));
+
+//     somasal += sal;
+//     somaf += filhos;
+
+// }
+
+// mediaS = somasal / 2;
+// mediaF = somaf / 2; 
+
+// alert("A média salarial é: " + mediaS + "\nA média de filhos é " + mediaF);
+
+
+
+
+// let somaSP = 0;
+// let somaRJ = 0;
+// let somaVei = 0;
+// let somaAci = 0;
+
+// for(let i = 1; i <= 10; i++){
+//     let veiculos = prompt("Seu veiculo é de passeio? ");
+//     let acidentes = prompt("Já se envolveu em acidente? ");
+//     let estado = prompt("Qual o estado do seu veículo? ");
+
+//     veiculos = veiculos.toLowerCase();
+//     acidentes = acidentes.toLowerCase();
+//     estado = estado.toLowerCase();
+
+//     if(veiculos == 's'){
+//         somaVei++
+//     }
+
+//     if(acidentes == 's'){
+//         somaAci++
+//     }
+
+//     if(estado == "sp"){
+//         somaSP++;
+//     } else if(estado == "rj"){
+//         somaRJ++
+//     }
+// }
+
+// alert("Veiculos de SP " + somaSP + "\nVeiculos de RJ: " + somaRJ + "\nVeiculos de passeio: " + somaVei + "\nNúmero de Acidentes: " + somaAci );
+
+
+
+
+let soma1 = 0;
+let soma2 = 0;
+let soma3 = 0;
+let soma4 = 0;
+let soma5 = 0;
+let soma6 = 0;
+
+for(let i = 1; i <= 10; i++){
+    let candidato = Number(prompt("Digite o número de seu candidato: \n\n" + " 1 - Bolsonaro\n 2 - Lula\n 3 - Ciro\n 4 - Daciolo\n 5 - Voto Nulo\n 6 - Voto em Branco"));
+
+    if(candidato == 1){
+        soma1++
+    }else if(candidato == 2){
+        soma2++
+    }else if(candidato == 3){
+        soma3++
+    }else if(candidato == 4){
+        soma4++
+    }else if(candidato == 5){
+        soma5++
+    }else if(candidato == 6){
+        soma6++
+    }else{
+        break
     }
 }
 
-alert("Peso " + maiorPeso);
+alert("Bolsonaro: " + soma1 + "\nLula: " + soma2 + "\nCiro: " + soma3 + "\nDaciolo: " + soma4 + "\nVotos Nulos: " + soma5 + "\nVotos em Branco: " + soma6)
