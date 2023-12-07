@@ -1,0 +1,46 @@
+:root{
+    font-size: 12px;
+}
+
+header{
+    background-color: white;
+    color: black;
+    font-size: 3rem;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+@media only screen and (min-width: 760px) {
+    header{
+        background-color: green;
+        color: lightgreen;
+    }
+}
+
+@media only screen and (max-width: 760px) and (min-width: 320px) {
+    :root{
+        font-size: 14px;
+    }
+    header{
+        background-color: yellow;
+    }
+}
+
+@media (max-width: 320px) {
+    :root{
+        font-size: 10px;
+    }
+    header{
+        background-color: red;
+    }
+
+    p{
+        display: none;
+    }
+}
