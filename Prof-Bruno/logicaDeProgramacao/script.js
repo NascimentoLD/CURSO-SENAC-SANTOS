@@ -381,31 +381,62 @@
 
 
 
-let soma1 = 0;
-let soma2 = 0;
-let soma3 = 0;
-let soma4 = 0;
-let soma5 = 0;
-let soma6 = 0;
+// let soma1 = 0;
+// let soma2 = 0;
+// let soma3 = 0;
+// let soma4 = 0;
+// let soma5 = 0;
+// let soma6 = 0;
 
-for(let i = 1; i <= 10; i++){
-    let candidato = Number(prompt("Digite o número de seu candidato: \n\n" + " 1 - Bolsonaro\n 2 - Lula\n 3 - Ciro\n 4 - Daciolo\n 5 - Voto Nulo\n 6 - Voto em Branco"));
+// for(let i = 1; i <= 10; i++){
+//     let candidato = Number(prompt("Digite o número de seu candidato: \n\n" + " 1 - Bolsonaro\n 2 - Lula\n 3 - Ciro\n 4 - Daciolo\n 5 - Voto Nulo\n 6 - Voto em Branco"));
 
-    if(candidato == 1){
-        soma1++
-    }else if(candidato == 2){
-        soma2++
-    }else if(candidato == 3){
-        soma3++
-    }else if(candidato == 4){
-        soma4++
-    }else if(candidato == 5){
-        soma5++
-    }else if(candidato == 6){
-        soma6++
-    }else{
-        break
+//     if(candidato == 1){
+//         soma1++
+//     }else if(candidato == 2){
+//         soma2++
+//     }else if(candidato == 3){
+//         soma3++
+//     }else if(candidato == 4){
+//         soma4++
+//     }else if(candidato == 5){
+//         soma5++
+//     }else if(candidato == 6){
+//         soma6++
+//     }else{
+//         break
+//     }
+// }
+
+// alert("Bolsonaro: " + soma1 + "\nLula: " + soma2 + "\nCiro: " + soma3 + "\nDaciolo: " + soma4 + "\nVotos Nulos: " + soma5 + "\nVotos em Branco: " + soma6);
+
+
+// ____________________________________________________________________________________
+
+
+let maiorPeso = 0;
+let maiorCem = 0;
+let npessoas = 0;
+let totalPessoas = 0;
+let somaP = 0;
+
+for(let i = 1; i <= 3; i++){
+    let peso = Number(prompt("Digite o peso da " + i + " º pessoa: "));
+    totalPessoas++
+
+    if(peso > 100){
+    maiorCem++
     }
+
+    if(peso > maiorPeso){
+        maiorPeso = peso
+    }
+
+    somaP += peso;
+
 }
 
-alert("Bolsonaro: " + soma1 + "\nLula: " + soma2 + "\nCiro: " + soma3 + "\nDaciolo: " + soma4 + "\nVotos Nulos: " + soma5 + "\nVotos em Branco: " + soma6)
+let media = somaP / totalPessoas;
+ 
+
+alert("A quantidade de pessoas que pesão mais que 100KG são: " + maiorCem + "\n\nO maior peso cadastrado é: " + maiorPeso + "\n\n A média de pesos cadastrado é: " + media)
