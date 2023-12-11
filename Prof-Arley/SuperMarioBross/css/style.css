@@ -134,7 +134,7 @@ header{
     justify-content: center;
     background-color: #E70112;
     border-radius: 50px;
-    width: 50%;
+    width: 80%;
     height: 49px;
     /* box-shadow: -5px 8px 10px rgba(255, 255, 255, 0.384); */
 }
@@ -152,6 +152,140 @@ header{
     font-family: 'Roboto', sans-serif;
 }
 
+/* Games */
+
+.mario-games{
+    max-width: 992px;
+    min-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    border-bottom: 2px solid #ffff;
+    margin-bottom: 4em;
+}
+
+.mario-games__vdo{
+    width: 900px;
+    height: 500px;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.mario-games__text{
+    color: #ffffff;
+    width: 900px;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mario-games__title{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 5em;
+    margin-bottom: 0.2em;
+}
+
+.mario-games__paragraph{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 1.8em;
+        line-height: 32px;
+}
+
+.games-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E70112;
+    border-radius: 50px;
+    width: 50%;
+    height: 49px;
+    margin-bottom: 8em;
+}
+
+.games-btn:hover{
+    background-color: transparent;
+    border: 2px solid #E70112;
+}
+
+.games-btn a{
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Formulario de Pesquisa */
+
+.form-content{
+    max-width: 992px;
+    min-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffff;
+}
+
+.form-content__title{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 5em;
+    margin-bottom: 0.2em;
+}
+
+.form-content__paragraph{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-bottom: 1.3em;
+}
+
+.form-content__buscar{
+    text-align: center;
+    width: 100%;
+}
+
+.pesquisar{
+    width: 80%;
+    height: 45px;
+    margin-bottom: 2.8em;
+}
+
+.fa-magnifying-glass{
+    font-size: 22px;
+}
+
+.form-content__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    border-radius: 50px;
+    width: 50%;
+    height: 49px;
+}
+
+
+.form-content__btn a{
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-content__btn:hover{
+    background-color: transparent;
+    border: 2px solid #008000;
+}
 /* Footer */
 
 footer{
@@ -197,12 +331,24 @@ footer{
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 15px;
     width: 60%;
     margin: 3em 0;
 }
 
 .footer-menu .fa-brands{
-    font-size: 2.5em;
+    font-size: 1.8em;
     color: #ffff;
+}
+
+@media only screen and (max-width: 768px) {
+    .personagem{
+        flex-wrap: wrap;
+    }
+
+    .mario-games__vdo{
+        width: 700px;
+        height: 300;
+    }
 }

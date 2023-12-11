@@ -414,29 +414,31 @@
 // ____________________________________________________________________________________
 
 
-let maiorPeso = 0;
-let maiorCem = 0;
-let npessoas = 0;
-let totalPessoas = 0;
-let somaP = 0;
+// let maiorPeso = 0;
+// let maiorCem = 0;
+// let npessoas = 0;
+// let totalPessoas = 0;
+// let somaP = 0;
 
-for(let i = 1; i <= 3; i++){
-    let peso = Number(prompt("Digite o peso da " + i + " º pessoa: "));
-    totalPessoas++
+// for(let i = 1; i <= 3; i++){
+//     let peso = Number(prompt("Digite o peso da " + i + " º pessoa: "));
+//     totalPessoas++
 
-    if(peso > 100){
-    maiorCem++
-    }
+//     if(peso > 100){
+//     maiorCem++
+//     }
 
-    if(peso > maiorPeso){
-        maiorPeso = peso
-    }
+//     if(peso > maiorPeso){
+//         maiorPeso = peso
+//     }
 
-    somaP += peso;
+//     somaP += peso;
 
-}
+// }
 
-let media = somaP / totalPessoas;
+// let media = somaP / totalPessoas;
  
 
-alert("A quantidade de pessoas que pesão mais que 100KG são: " + maiorCem + "\n\nO maior peso cadastrado é: " + maiorPeso + "\n\n A média de pesos cadastrado é: " + media)
+// alert("A quantidade de pessoas que pesão mais que 100KG são: " + maiorCem + "\n\nO maior peso cadastrado é: " + maiorPeso + "\n\n A média de pesos cadastrado é: " + media)
+
+
