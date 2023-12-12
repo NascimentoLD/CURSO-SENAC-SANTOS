@@ -4,6 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
+:root{
+    font-size: 16px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -38,7 +42,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 3em;
+    margin-bottom: 3rem;
 }
 
 .logo{
@@ -47,6 +51,12 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.menu-hamb{
+    width: 50px;
+    height: auto;
+    display: none;
 }
 
 .menu-navbar{
@@ -62,7 +72,7 @@ header{
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 1.3rem;
     transition: 1s;
 }
 
@@ -81,9 +91,9 @@ header{
     max-width: 992px;
     min-width: 320px;
     margin: 0 auto;
-    margin-top: 5em;
+    margin-top: 5rem;
     border-bottom: 2px solid #ffff;
-    padding-bottom: 5em;
+    padding-bottom: 5rem;
     gap: 30px;
 }
 
@@ -116,15 +126,15 @@ header{
 
 .personagem__title{
     font-family: 'Luckiest Guy', cursive;
-    font-size: 5em;
+    font-size: 5rem;
     text-align: center;
-    margin-bottom: 0.5em;
+    margin-bottom: 1rem;
 }
 
 .personagem__paragraph{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 1.8em;
+    margin-bottom: 1.8rem;
     line-height: 32px;
 }
 
@@ -164,7 +174,7 @@ header{
     justify-content: center;
     color: #ffff;
     border-bottom: 2px solid #ffff;
-    margin-bottom: 4em;
+    margin-bottom: 4rem;
 }
 
 .mario-games__vdo{
@@ -180,7 +190,7 @@ iframe{
 .mario-games__text{
     color: #ffffff;
     width: 900px;
-    margin-top: 3em;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,14 +199,14 @@ iframe{
 
 .mario-games__title{
     font-family: 'Luckiest Guy', cursive;
-    font-size: 5em;
-    margin-bottom: 0.2em;
+    font-size: 5rem;
+    margin-bottom: 1rem;
 }
 
 .mario-games__paragraph{
-        font-size: 20px;
+        font-size: 1.4rem;
         font-family: Arial, Helvetica, sans-serif;
-        margin-bottom: 1.8em;
+        margin-bottom: 1.8rem;
         line-height: 32px;
 }
 
@@ -208,7 +218,7 @@ iframe{
     border-radius: 50px;
     width: 50%;
     height: 49px;
-    margin-bottom: 8em;
+    margin-bottom: 8rem;
 }
 
 .games-btn:hover{
@@ -238,14 +248,14 @@ iframe{
 
 .form-content__title{
     font-family: 'Luckiest Guy', cursive;
-    font-size: 5em;
-    margin-bottom: 0.2em;
+    font-size: 5rem;
+    margin-bottom: 0.2rem;
 }
 
 .form-content__paragraph{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    margin-bottom: 1.3em;
+    font-size: 1.5rem;
+    margin-bottom: 1.3rem;
 }
 
 .form-content__buscar{
@@ -256,11 +266,11 @@ iframe{
 .pesquisar{
     width: 80%;
     height: 45px;
-    margin-bottom: 2.8em;
+    margin-bottom: 2.8rem;
 }
 
 .fa-magnifying-glass{
-    font-size: 22px;
+    font-size: 1.4rem;
 }
 
 .form-content__btn{
@@ -292,7 +302,7 @@ footer{
     background-image: url(../img/fundo-preto-com-textura-de-fibra-de-carbono_1017-33436.avif);
     width: 100%;
     height: auto;
-    margin-top: 5em;
+    margin-top: 5rem;
 }
 
 .footer-container{
@@ -307,24 +317,23 @@ footer{
     align-items: center;
     justify-content: center;
     gap: 30px;
-    margin: 2.3em 0;
+    margin: 2.3rem 0;
 }
 
 .footer-img{
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 }
 
 .footer-container__title{
     color: #ffff;
     font-family: 'Roboto', sans-serif;
-    font-size: 2em;
+    font-size: 1.5rem;
 }
 
 .footer-container__paragraph{
     color: #ffff;
     font-family: 'Roboto', sans-serif;
-    margin: 1.3em 0;
 }
 
 .footer-menu{
@@ -334,11 +343,11 @@ footer{
     justify-content: center;
     gap: 15px;
     width: 60%;
-    margin: 3em 0;
+    margin: 2rem 0;
 }
 
 .footer-menu .fa-brands{
-    font-size: 1.8em;
+    font-size: 1.8rem;
     color: #ffff;
 }
 
@@ -351,4 +360,101 @@ footer{
         width: 700px;
         height: 300;
     }
+}
+
+@media only screen and (max-width: 360px) {
+    :root{
+        font-size: 8.5px;
+    }
+
+    header{
+        justify-content: space-between;
+    }
+
+    .logo{
+        width: 70px;
+        margin-left: 3rem;
+
+    }    
+
+    .menu-hamb{
+        display: inline-block;
+        margin-right: 3rem;
+        width: 40px;
+    }
+
+    .menu-navbar{
+        display: none;
+    }
+
+    .personagem{
+        margin: 0 auto;
+        text-align: center;
+        margin: 0 2rem;
+    }
+
+    .personagem__image{
+        margin-top: 5rem;
+    }
+
+    .personagem__btn{
+        width: 70%;
+        font-size: 1.3rem;
+    }
+
+    /* Games */
+
+    .mario-games{
+        margin: 0 auto;
+        text-align: center;
+        margin: 0 2rem;
+    }
+
+    .mario-games__title{
+        margin: 3rem 0;
+    }
+
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+    .mario-games__vdo{
+        width: 100%;
+        height: 40%;
+    }
+
+    .mario-games__text{
+        width: 90%;
+    }
+
+    .games-btn{
+        width: 70%;
+        font-size: 1.3rem;
+    }
+
+    .form-content{
+        width: 90%;
+    }
+
+    .form-content__title{
+        font-size: 4rem;
+        margin: 2.5rem 0;
+    }
+
+    .form-content__paragraph{
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .form-content__btn{
+        width: 70%;
+        font-size: 1.3rem;
+    }
+
+    .fa-magnifying-glass{
+        font-size: 2rem;
+        margin-right: 10px;
+    }
+
 }
