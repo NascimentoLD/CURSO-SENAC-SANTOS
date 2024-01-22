@@ -442,3 +442,91 @@
 // alert("A quantidade de pessoas que pesão mais que 100KG são: " + maiorCem + "\n\nO maior peso cadastrado é: " + maiorPeso + "\n\n A média de pesos cadastrado é: " + media)
 
 
+
+
+
+// let produto = prompt("Escolha o produto desejado:\n\n1- Titan 160 - 2021 - (R$15,800 Reais.)\n2- MT 03 - 2023 - (R$30,000 Reais.)\n3- Hornet - 2018 - (R$45,000)\n4- BMW GS 1250 - 2024 - (R$150.000 Reais.)")
+
+// let formaPagamento = prompt("Escolha a Forma de pagamento que você pretende efetuar a compra:\n\n1- A vista em dinheiro ou cheque (15% de Desconto)\n2- A vista  no cartão de credito (10% de Desconto)\n3- Em duas vezes, preço normal de etiqueta (Sem Juros!)\n4- Em quatro vezes (5% de Juros!)")
+
+// let porcentagem = 0;
+
+// if(produto == 1){
+//     if(formaPagamento == 1){
+//         desconto = 15800 - (15800 * 0.15) 
+//     }else if(formaPagamento == 2){
+//         desconto = 15800 - (15800 * 0.10)
+//     }else if(formaPagamento == 3){
+//         desconto = 15800
+//     }else if(formaPagamento == 4){
+//         desconto = 15800 + (15800 * 0.05)
+//     }
+// }
+
+// if(produto == 2){
+//     if(formaPagamento == 1){
+//         desconto = 30000 - (30000 * 0.15) 
+//     }else if(formaPagamento == 2){
+//         desconto = 30000 - (30000 * 0.10)
+//     }else if(formaPagamento == 3){
+//         desconto = 30000
+//     }else if(formaPagamento == 4){
+//         desconto = 30000 + (30000 * 0.05)
+//     }
+// }
+
+// if(produto == 3){
+//     if(formaPagamento == 1){
+//         desconto = 45000 - (45000 * 0.15) 
+//     }else if(formaPagamento == 2){
+//         desconto = 45000 - (45000 * 0.10)
+//     }else if(formaPagamento == 3){
+//         desconto = 45000
+//     }else if(formaPagamento == 4){
+//         desconto = 45000 + (45000 * 0.05)
+//     }
+// }
+
+// if(produto == 4){
+//     if(formaPagamento == 1){
+//         desconto = 150000 - (150000 * 0.15) 
+//     }else if(formaPagamento == 2){
+//         desconto = 150000 - (150000 * 0.10)
+//     }else if(formaPagamento == 3){
+//         desconto = 150000
+//     }else if(formaPagamento == 4){
+//         desconto = 150000 + (150000 * 0.05)
+//     }
+// }
+
+// alert("Detalhes da sua compra: \n\n" + "Produto Escolhido: " + produto  + "\nForma de pagamento desejado: " + formaPagamento + "\nO desconto de é de: " + desconto)
+
+
+
+
+let name = prompt("Digite o nome e a turma do aluno: ")
+let nt1 = prompt("Digite a nota do primeiro semestre: ")
+let nt2 = prompt("Digite a nota do segundo semestre: ")
+let nt3 = prompt("Digite a nota do terceiro semestre: ")
+let nt4 = prompt("Digite a nota do quarto semestre: ")
+
+let media;
+
+media = (Number(nt1) + Number(nt2) + Number(nt3) + Number(nt4)) / 4;
+
+if(media == 10){
+    alert("Nota A!")
+}else if(media >= 7 && media < 9){
+    alert("Nota B")
+}else if(media >= 6 && media < 7){
+    alert("Nota C!")
+}else if(media >= 4 && media < 6){
+    alert("Nota D!")
+}else if(media < 4){
+    alert("Nota E!")
+}
+
+console.log(media)
+
+alert(`Nome do Aluno e Turma: ${name} \nSua nota é: ${media}`)
+
