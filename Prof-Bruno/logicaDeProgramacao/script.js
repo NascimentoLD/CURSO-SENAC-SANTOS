@@ -442,7 +442,7 @@
 // alert("A quantidade de pessoas que pesão mais que 100KG são: " + maiorCem + "\n\nO maior peso cadastrado é: " + maiorPeso + "\n\n A média de pesos cadastrado é: " + media)
 
 
-
+// ____________________________________________________________________________________
 
 
 // let produto = prompt("Escolha o produto desejado:\n\n1- Titan 160 - 2021 - (R$15,800 Reais.)\n2- MT 03 - 2023 - (R$30,000 Reais.)\n3- Hornet - 2018 - (R$45,000)\n4- BMW GS 1250 - 2024 - (R$150.000 Reais.)")
@@ -502,31 +502,127 @@
 // alert("Detalhes da sua compra: \n\n" + "Produto Escolhido: " + produto  + "\nForma de pagamento desejado: " + formaPagamento + "\nO desconto de é de: " + desconto)
 
 
+// ____________________________________________________________________________________
 
 
-let name = prompt("Digite o nome e a turma do aluno: ")
-let nt1 = prompt("Digite a nota do primeiro semestre: ")
-let nt2 = prompt("Digite a nota do segundo semestre: ")
-let nt3 = prompt("Digite a nota do terceiro semestre: ")
-let nt4 = prompt("Digite a nota do quarto semestre: ")
+// let name = prompt("Digite o nome e a turma do aluno: ")
+// let nt1 = prompt("Digite a nota do primeiro semestre: ")
+// let nt2 = prompt("Digite a nota do segundo semestre: ")
+// let nt3 = prompt("Digite a nota do terceiro semestre: ")
+// let nt4 = prompt("Digite a nota do quarto semestre: ")
 
-let media;
+// let media;
 
-media = (Number(nt1) + Number(nt2) + Number(nt3) + Number(nt4)) / 4;
+// media = (Number(nt1) + Number(nt2) + Number(nt3) + Number(nt4)) / 4;
 
-if(media == 10){
-    alert("Nota A!")
-}else if(media >= 7 && media < 9){
-    alert("Nota B")
-}else if(media >= 6 && media < 7){
-    alert("Nota C!")
-}else if(media >= 4 && media < 6){
-    alert("Nota D!")
-}else if(media < 4){
-    alert("Nota E!")
+// if(media == 10){
+//     alert("Nota A!")
+// }else if(media >= 7 && media < 9){
+//     alert("Nota B")
+// }else if(media >= 6 && media < 7){
+//     alert("Nota C!")
+// }else if(media >= 4 && media < 6){
+//     alert("Nota D!")
+// }else if(media < 4){
+//     alert("Nota E!")
+// }
+
+// console.log(media)
+
+// alert(`Nome do Aluno e Turma: ${name} \nSua nota é: ${media}`)
+
+
+// ____________________________________________________________________________________
+
+
+// let lanches = parseFloat(prompt("Escolha seu pedido: \n\n1- Cachorro Quente - R$1,70 reais\n2- Bauru Simples - R$2,30 reias\n3- Bauru com Ovos -R$2,60 reais\n4- Hamburguer - R$2,40 reais\n4- CheeseBurguer - R$2,50 reais"))
+
+// let valor;
+// let totalPagar;
+// let lanche;
+
+// switch(lanches){
+//     case 1:
+//         valor = 1.70;
+//         lanche = "Cachorro Quente"
+//         break
+//     case 2:
+//         valor = 2.30;
+//         lanche = "Bauru Simples"
+//         break
+//     case 3:
+//         valor = 2.60;
+//         lanche = "Bauru com Ovos"
+//         break
+//     case 4:
+//         valor = 2.50;
+//         lanche = "Hamburguer"
+//         break
+//     case 5:
+//         valor = 1.50;
+//         lanche = "CheeseBurguer"
+//         break
+//     default:
+//         alert("Volte e escolha um número de 1 a 5")
+// }
+
+// let qntd = Number(prompt("Quantas unidades você vai querer desse pedido?\n\n1- Unidade\n2- Unidade\n3- Unidade\n4- Unidade\n5- Unidade"))
+
+// totalPagar = valor * qntd;
+
+// alert(`Seu pedido é: ${qntd} - ${lanche} - R$${totalPagar} Reais`)
+
+
+// ____________________________________________________________________________________
+
+// let tabuada = parseFloat(prompt("Digite um número:"));
+// let tamTabuada = parseFloat(prompt("Digite o tamanho da tabuada:"));
+// let indice = 1;
+
+// while(indice <= tamTabuada){
+//     document.write(tabuada + "x" + indice + "=" + (indice * tabuada) + "<br>");
+//     indice++
+// }
+
+// document.write("Fim da tabuada");
+
+let voto = parseInt(prompt("Escolha seu candidato:\n\n1- Jair Rodrigues\n2- Carlos Luz\n3- Neves Rocha\n4- Nulo\n5- Branco\n\n6- Entre com seu voto:"));
+
+let jr = 0;
+let cl = 0;
+let nr = 0;
+let nulo = 0;
+let branco = 0;
+
+
+while(voto != 6){
+    switch(voto){
+        case 1:
+            voto = jr++
+            break
+        case 2:
+            voto = cl++
+            break
+        case 3:
+            voto = nr++
+            break
+        case 4:
+            voto = nulo++
+            break
+        case 5:
+            voto = branco++
+            break
+        default:
+            alert(`Digite uma opção valida entre os números 1 e 5!`)
+    }
+
+    
+    voto = parseInt(prompt("Escolha seu candidato:\n\n1- Jair Rodrigues\n2- Carlos Luz\n3- Neves Rocha\n4- Nulo\n5- Branco\n\n Entre com seu voto:"));
 }
 
-console.log(media)
+let qntdVotos = jr + cl + nr + nulo + branco;
+porcentagem = qntdVotos / 100;
+porcentagemNulo = (porcentagem * nulo)*100;
+alert(`Porcentagem de votos nulos: ${porcentagemNulo}%`)
 
-alert(`Nome do Aluno e Turma: ${name} \nSua nota é: ${media}`)
-
+alert(`Resultado dos votos: \n\nTotal de votos em Jair Rodrigues: ${jr}\nTotal de votos em Carlos Luz: ${cl}\nNeves Rocha: ${nr}\nTotal de votos Nulos: ${nulo}\nTotal de votos em Branco ${branco}\nPorcentagem de votos nulos: ${porcentagemNulo}%`)
