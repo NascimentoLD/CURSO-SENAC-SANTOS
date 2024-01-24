@@ -1,0 +1,169 @@
+:root{
+    --font-size: 16px;
+
+    --color--black: #000000;
+    --color--dark-gray: #D9D9D9;
+    --color--light-gray: #EEEEEE;
+    --color--white: #ffffff;
+    --color--baby-blue: #E5F4FF;
+    --color--blue: #1298F8;
+
+    --color--green: #48D05F; /* Success */
+    --color--red: #E92929; /* Attention */
+}
+
+/* Fontes */
+
+@font-face {
+    font-family: "interBold";
+    src: url(../fontes/InterBold.ttf);
+}
+
+@font-face {
+    font-family: "interRegular";
+    src: url(../fontes/InterRegular.ttf);
+}
+
+@font-face {
+    font-family: "interlight";
+    src: url(../fontes/InterLight.ttf);
+}
+
+/* Header */
+
+.topo{
+    font-size: 1.5rem;
+    font-family: "interBold";
+
+    background-color: var(--color--baby-blue);
+    color: var(--color--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 136px;
+    gap: 10px;
+}
+
+.topo__titulo{    
+    color: var(--color--blue);
+}
+
+/* Pizza Card */
+
+.pizza-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 104px;
+}
+
+.pizzas-card__item{
+    display: flex;
+    width: 349px;
+    height: 556px;
+    padding: 128px 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 8px;
+    line-height: 2rem;
+    text-align: center;
+
+    border-radius: 35px;
+    background: #FFF;
+    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.25);
+}
+
+.fa-circle-plus{
+    position: relative;
+    top: -42px;
+    font-size: 3rem;
+    color: var(--color--blue);
+}
+
+/* Modal */
+
+.background-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.modal-pizza{
+    width: 874px;
+    height: 446px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+
+    border-radius: 25px;
+    background: #FFF;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
+}
+
+.modal-pizza__img{
+    width: 200px;
+}
+
+.modal-pizza__detalhes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.modal-pizza__btn-fechar{
+    position: relative;
+    right: -350px;
+}
+
+.modal-pizza__tx-titulo{
+    font-family: "interBold";
+    font-size: 1.5rem;
+}
+
+.modal-pizza__tx-ingredientes{
+    font-family: "interRegular";
+    font-size: 1rem;
+}
+
+.modal-pizza__tx-tamanho{
+    font-family: "interRegular";
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.modal-pizza__controle-tamanhos{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 8px;
+
+    border-radius: 16px 16px 16px 16px;
+    background-color: var(--color--light-gray);
+}
+
+.modal-pizza__tx-preco{
+    font-family: "interRegular";
+}
+
+.modal-pizza__qtd{
+    display: flex;
+    gap: 1rem;
+}
+
+.modal-pizza__tx-valor{
+    font-family: "interRegular";
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.modal-pizza__controle-qtd{
+    display: flex;
+}
