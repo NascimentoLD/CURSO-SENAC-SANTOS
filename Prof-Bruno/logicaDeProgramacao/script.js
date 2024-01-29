@@ -593,6 +593,7 @@ let cl = 0;
 let nr = 0;
 let nulo = 0;
 let branco = 0;
+let vencedor;
 
 
 while(voto != 6){
@@ -617,12 +618,19 @@ while(voto != 6){
     }
 
     
-    voto = parseInt(prompt("Escolha seu candidato:\n\n1- Jair Rodrigues\n2- Carlos Luz\n3- Neves Rocha\n4- Nulo\n5- Branco\n\n Entre com seu voto:"));
+    voto = parseInt(prompt("Escolha seu candidato:\n\n1- Jair Rodrigues\n2- Carlos Luz\n3- Neves Rocha\n4- Nulo\n5- Branco\n\n Entre com seu voto:"))
+}
+
+if(jr > cl && jr > nr){
+    vencedor = "Jair Rodrigues"
+}else if(cl > jr && cl > nr){
+    vencedor = "Carlos Luz"
+}else if(nr > jr && nr > cl){
+    vencedor = "Neves Rocha"
 }
 
 let qntdVotos = jr + cl + nr + nulo + branco;
 porcentagem = qntdVotos / 100;
 porcentagemNulo = (porcentagem * nulo)*100;
-alert(`Porcentagem de votos nulos: ${porcentagemNulo}%`)
 
-alert(`Resultado dos votos: \n\nTotal de votos em Jair Rodrigues: ${jr}\nTotal de votos em Carlos Luz: ${cl}\nNeves Rocha: ${nr}\nTotal de votos Nulos: ${nulo}\nTotal de votos em Branco ${branco}\nPorcentagem de votos nulos: ${porcentagemNulo}%`)
+alert(`Resultado dos votos: \n\nTotal de votos em Jair Rodrigues: ${jr}\nTotal de votos em Carlos Luz: ${cl}\nNeves Rocha: ${nr}\nTotal de votos Nulos: ${nulo}\nTotal de votos em Branco ${branco}\nPorcentagem de votos nulos: ${porcentagemNulo}% \n\nO vencedor é: ${vencedor}`)
