@@ -1,0 +1,13 @@
+:root{
+    --font-size: 16px;
+
+    --color--black: #000000;
+    --color--dark-gray: #D9D9D9;
+    --color--light-gray: #EEEEEE;
+    --color--white: #ffffff;
+    --color--baby-blue: #E5F4FF;
+    --color--blue: #1298F8;
+
+    --color--green: #48D05F; /* Success */
+    --color--red: #E92929; /* Attention */
+}
