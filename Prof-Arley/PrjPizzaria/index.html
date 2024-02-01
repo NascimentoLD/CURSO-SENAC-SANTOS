@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/vars.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrinho.css">
     <script src="https://kit.fontawesome.com/ebc3101efe.js" crossorigin="anonymous"></script>
     <title>Pizzaria</title>
 </head>
@@ -28,7 +29,7 @@
                     <span class="fa-solid fa-circle-plus"></span>
                 </a>
                 <span class="pizzas-cards__preco">R$99,99</span>
-                <span class="pizzas-cards__titulo">Titulo</span>
+                <span class="pizzas-cards__titulo">Calabresa</span>
                 <p class="pizzas-cards__texto">Dois Hamburgueres, alface, queijo, molho...</p>
             </div>
 
@@ -38,7 +39,7 @@
                     <span class="fa-solid fa-circle-plus"></span>
                 </a>
                 <span class="pizzas-cards__preco">R$99,99</span>
-                <span class="pizzas-cards__titulo">Titulo</span>
+                <span class="pizzas-cards__titulo">Brocolis</span>
                 <p class="pizzas-cards__texto">Dois Hamburgueres, alface, queijo, molho...</p>
             </div>
 
@@ -48,7 +49,7 @@
                     <span class="fa-solid fa-circle-plus"></span>
                 </a>
                 <span class="pizzas-cards__preco">R$99,99</span>
-                <span class="pizzas-cards__titulo">Titulo</span>
+                <span class="pizzas-cards__titulo">Roma</span>
                 <p class="pizzas-cards__texto">Dois Hamburgueres, alface, queijo, molho...</p>
             </div>
 
@@ -58,7 +59,7 @@
                     <span class="fa-solid fa-circle-plus"></span>
                 </a>
                 <span class="pizzas-cards__preco">R$99,99</span>
-                <span class="pizzas-cards__titulo">Titulo</span>
+                <span class="pizzas-cards__titulo">Paulista</span>
                 <p class="pizzas-cards__texto">Dois Hamburgueres, alface, queijo, molho...</p>
             </div>
 
@@ -68,7 +69,7 @@
                     <span class="fa-solid fa-circle-plus"></span>
                 </a>
                 <span class="pizzas-cards__preco">R$99,99</span>
-                <span class="pizzas-cards__titulo">Titulo</span>
+                <span class="pizzas-cards__titulo">Cheddar e Bacon</span>
                 <p class="pizzas-cards__texto">Dois Hamburgueres, alface, queijo, molho...</p>
             </div>
 
@@ -78,7 +79,7 @@
                     <span class="fa-solid fa-circle-plus"></span>
                 </a>
                 <span class="pizzas-cards__preco">R$99,99</span>
-                <span class="pizzas-cards__titulo">Titulo</span>
+                <span class="pizzas-cards__titulo">Frango c/ Queijo</span>
                 <p class="pizzas-cards__texto">Dois Hamburgueres, alface, queijo, molho...</p>
             </div>
 
@@ -88,7 +89,7 @@
                     <span class="fa-solid fa-circle-plus"></span>
                 </a>
                 <span class="pizzas-cards__preco">R$99,99</span>
-                <span class="pizzas-cards__titulo">Titulo</span>
+                <span class="pizzas-cards__titulo">Frango c/ Catupiry</span>
                 <p class="pizzas-cards__texto">Dois Hamburgueres, alface, queijo, molho...</p>
             </div>
 
@@ -98,7 +99,7 @@
                     <span class="fa-solid fa-circle-plus"></span>
                 </a>
                 <span class="pizzas-cards__preco">R$99,99</span>
-                <span class="pizzas-cards__titulo">Titulo</span>
+                <span class="pizzas-cards__titulo">Chocolate</span>
                 <p class="pizzas-cards__texto">Dois Hamburgueres, alface, queijo, molho...</p>
             </div>
 
@@ -108,7 +109,7 @@
                     <span class="fa-solid fa-circle-plus"></span>
                 </a>
                 <span class="pizzas-cards__preco">R$99,99</span>
-                <span class="pizzas-cards__titulo">Titulo</span>
+                <span class="pizzas-cards__titulo">Romeu e Juliets</span>
                 <p class="pizzas-cards__texto">Dois Hamburgueres, alface, queijo, molho...</p>
             </div>
             
@@ -118,23 +119,81 @@
                     <span class="fa-solid fa-circle-plus"></span>
                 </a>
                 <span class="pizzas-cards__preco">R$99,99</span>
-                <span class="pizzas-cards__titulo">Titulo</span>
+                <span class="pizzas-cards__titulo">Doce de Leite</span>
+                <p class="pizzas-cards__texto">Dois Hamburgueres, alface, queijo, molho...</p>
+            </div>
+
+            <div class="pizzas-card__item">
+                <img src="img/img-produto01.png" alt="" class="pizza-cards__img">
+                <a class="pizzas-cards__btn-add" href="#modal">
+                    <span class="fa-solid fa-circle-plus"></span>
+                </a>
+                <span class="pizzas-cards__preco">R$99,99</span>
+                <span class="pizzas-cards__titulo">Doce de Leite</span>
+                <p class="pizzas-cards__texto">Dois Hamburgueres, alface, queijo, molho...</p>
+            </div>
+
+            <div class="pizzas-card__item">
+                <img src="img/img-produto01.png" alt="" class="pizza-cards__img">
+                <a class="pizzas-cards__btn-add" href="#modal">
+                    <span class="fa-solid fa-circle-plus"></span>
+                </a>
+                <span class="pizzas-cards__preco">R$99,99</span>
+                <span class="pizzas-cards__titulo">Doce de Leite</span>
                 <p class="pizzas-cards__texto">Dois Hamburgueres, alface, queijo, molho...</p>
             </div>
         </section>
 
         <!-- Carrinho de compras da nossa página -->
-        <aside class="carrinho">
-            <h1 class="carrinho__titulo">Suas Pizzas</h1>
+        <aside id="cart" class="carrinho">
+            <div class="carrinho__header">
+                <h1 class="carrinho__tx tx--titulo">Suas Pizzas</h1>
+                <a href="index.html">Voltar</a>
+            </div>
             <div class="carrinho__item">
-                <img src="" alt="" class="carrinho__item-img">
-                <p class="carrinho__item-descricao">Portuguesa (G)</p>
-                <p class="carrinho__item-preco">R$ 59,90</p>
-                <div class="carrinho__qtd-controle">
-                    <button class="carrinho__item-item-adicionar">Adicionar ao Carrinho!</button>
-                    <span class="carrinho__item-qtd"></span>
-                    <button class="carrinho__item-remover">Remover</button>
+                <img src="img/img-produto01.png" alt="" class="carrinho__img">
+                <div class="carrinho__item-tx">
+                    <p class="carrinho__tx">Portuguesa (G)</p>
+                    <p class="carrinho__tx">R$ 59,90</p>
                 </div>
+                <div class="carrinho__qtd-controle">
+                    <button class="carrinho__btn btn--adicionar">
+                        <span class="fa-solid fa-plus"></span>
+                    </button>
+                    <span class="carrinho__qtd">0</span>
+                    <button class="carrinho__btn btn--remover">
+                        <span class="fa-solid fa-minus"></span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="carrinho__item">
+                <img src="img/img-produto01.png" alt="" class="carrinho__img">
+                <div class="carrinho__item-tx">
+                    <p class="carrinho__tx">Portuguesa (G)</p>
+                    <p class="carrinho__tx">R$ 59,90</p>
+                </div>
+                <div class="carrinho__qtd-controle">
+                    <button class="carrinho__btn btn--adicionar">
+                        <span class="fa-solid fa-plus"></span>
+                    </button>
+                    <span class="carrinho__qtd">0</span>
+                    <button class="carrinho__btn btn--remover">
+                        <span class="fa-solid fa-minus"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="carrinho__calculos">
+                <p class="carrinho__tx tx--item">Subtotal: 
+                    <span class="carrinho__tx tx--valor">R$99,99</span>
+                </p>
+                <p class="carrinho__tx tx--item">Desconto 10%:
+                    <span class="carrinho__tx tx--valor">R$99,99</span>
+                </p>
+                <p class="carrinho__tx tx--total">Valor Total:
+                    <span class="carrinho__tx tx--valor-total">R$99,99</span>
+                </p>
+                <button class="carrinho__btn btn--finalizar-compra">Finaliza Compra!</button>
             </div>
         </aside>
     </main>
@@ -142,7 +201,7 @@
     <!-- Nosso Rodapé -->
     <footer>
         <address class="rodape__endereco">
-            Rua das Margaridas, 25
+            Endereço: Rua das Margaridas, 25
             <br> Centro de São Paulo - SP
         </address>
 
@@ -183,7 +242,7 @@
                     </div>
                 </div>
                 <div class="modal-pizza__btns">
-                    <button class="modal-pizza__btn modal-pizza__btn--adicionar">Adicionar ao carrinho</button>
+                    <button class="modal-pizza__btn modal-pizza__btn--adicionar"><a href="#cart">Adicionar ao carrinho</a></button>
                     <button class="modal-pizza__btn modal-pizza__btn--cancelar">Cancelar</button>
                 </div>
             </div>

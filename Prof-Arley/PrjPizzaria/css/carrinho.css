@@ -1,0 +1,112 @@
+.carrinho{
+    width: 492px;
+    /* height: 580px; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 10px;
+    padding: 22px 8px;
+    background-color: var(--color--baby-blue);
+    position: absolute;
+    visibility: hidden;
+}
+
+.carrinho:target{
+    position: static;
+    visibility: visible;
+}
+
+.carrinho__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8px;
+}
+
+.carrinho__header{
+    display: flex;
+    justify-content: space-between;
+    font-family: "interbold";
+    font-size: 24px;
+}
+
+.carrinho__header a{
+    text-decoration: none;
+    color: var(--color--blue);
+}
+
+.carrinho__img{
+    width: 80px;
+    height: 80px;
+}
+
+.carrinho__item-tx{
+    font-family: "interRegular";
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.carrinho__qtd-controle{
+    width: 162px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 24px;
+    font-family: "interRegular";
+
+    border-radius: 16px;
+    background: var(--color--light-gray);
+    border: 1.5px solid var(--color--dark-gray);
+}
+
+.fa-plus , .fa-minus{
+    font-size: 20px;
+}
+
+.carrinho__calculos{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tx--item{
+    font-family: "interbold";
+    font-size: 24px;
+    color: var(--color--blue);
+    border-top: 1px solid var(--color--blue);   
+    padding: 24px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tx--valor{
+    font-family: "interlight";
+    color: #000;
+}
+
+.tx--total{
+    font-family: "interbold";
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 8px;
+    border-top: 1px solid var(--color--blue);
+}
+
+.btn--finalizar-compra{
+    background-color: var(--color--green);
+    color: #ffffff;
+    width: 476px;
+    height: 51px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
