@@ -51,6 +51,7 @@ main{
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 50px;
+    padding: 30px 0;
 }
 
 .pizzas-card__item{
@@ -139,7 +140,8 @@ main{
     width:32px;
     padding:8px;
     text-align: center;    
-    align-self: flex-end;
+    align-self: flex-start;
+    order: 1;
     color: #aaa;
     font-size: 0.75rem;    
     text-decoration: none;
@@ -184,6 +186,7 @@ main{
     font-family: "InterBold";
     font-size: 1rem;
     text-transform: uppercase;
+    text-align: center;
     /* padding: 0 8px; */
     /*não colocar - demonstrar */
  
@@ -270,7 +273,6 @@ main{
 footer{
     display: flex;
     height: 144px;
-    justify-content: center;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -278,3 +280,49 @@ footer{
     text-align: center;
     font-family: "interRegular";
 }
+
+/* Midia Query */
+
+@media screen and (max-width: 665px){    
+    .modal-pizza{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 50%;
+        min-width: 300px;
+    }
+
+    .modal-pizza__detalhes{
+        display: flex;
+        align-items: center;
+    }
+
+    .modal-pizza__btn-fechar{
+        order: -1;
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 944px) {  
+    .modal-pizza__controle-tamanhos{
+        text-align: center;
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 16px;
+        gap: 16px;
+        height: auto;
+    }
+
+    .rodape__redes-sociais{
+        order: -1;
+    }
+
+    .modal-pizza__btn-fechar{
+        order: 1;
+    }
+}
+
