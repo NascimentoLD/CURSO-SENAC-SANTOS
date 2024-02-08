@@ -1,0 +1,55 @@
+/* .elemento-animado{
+    width: 100px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 6s ease-in, transform 2s;
+}
+
+.elemento-animado:hover{
+    width: 300px;
+}
+
+.elemento-animado p{
+    color: #ffffff;
+    text-align: center;
+} */
+
+.elemento-animado{
+    width: 100px;
+    height: 100px;
+    background-color: #8a2be2;
+}
+
+.elemento-animado:hover{
+    /* Usamos a animação pré-definida */
+    animation-name: change-color;
+    animation-duration: 6s;
+    animation-timing-function: ease-in;
+    animation-delay: 5s;
+}
+
+/* Definição do comportamento da animação - configuração dos Keyframes */
+/* Por padrão temos From e to */
+@keyframes change-color{
+    0%{
+        background-color: #8a2be2;
+    }
+
+    25%{
+        background-color: black;
+    }
+
+    50%{
+        background-color: blue;
+    }
+
+    75%{
+        background-color: brown;
+    }
+
+    100%{
+        background-color: #ffffff;
+    }
+}

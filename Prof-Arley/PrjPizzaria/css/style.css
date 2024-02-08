@@ -15,10 +15,6 @@
     src: url(../fontes/InterLight.ttf);
 }
 
-main{
-    position: relative;
-}
-
 /* Header */
 
 .topo{
@@ -148,7 +144,7 @@ main{
 }
  
 .modal-pizza__btn-fechar:hover {
-    color: #bcc;
+    color: #ff0000;
 }
  
  

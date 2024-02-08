@@ -110,22 +110,7 @@
     font-size: 16px;
 }
 
-@media screen and (max-width: 900px) {
-    .carrinho{
-        position: absolute;
-        padding: 16px;
-        width: 100vw;
-        gap: 32px;
-    }
-
-    .carrinho:target{
-        overflow-y: scroll;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-    }
-}
+/* MIDIA QUERY */
 
 @media screen and (max-width: 530px) {
     .carrinho{
@@ -152,5 +137,22 @@
 
     .carrinho__btn{
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .carrinho{
+        position: absolute;
+        padding: 16px;
+        width: 100vw;
+        gap: 32px;
+    }
+
+    .carrinho:target{
+        overflow-y: scroll;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
     }
 }

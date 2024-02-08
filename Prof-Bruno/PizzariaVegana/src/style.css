@@ -36,6 +36,10 @@ header{
     color: #000000;
 }
 
+.menu a:hover{
+    color: #E76F51;
+}
+
 .title{
     font-family: 'Rancho', cursive;
     font-size: 96px;
@@ -56,6 +60,13 @@ header{
     justify-content: space-around;
     width: 600px;
     height: 837px;
+}
+
+.hero__text a{
+    color: #000000;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 .hero_text-title{
@@ -106,14 +117,49 @@ button{
     cursor: pointer;
 }
 
+button:hover{
+    background-color: transparent;
+    /* box-shadow: ; */
+    color: #E76F51;
+    border: 2px solid #E76F51;
+}
+
 .hero__text-icon{
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    text-align: center;
+}
+
+.img-bd{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding: 0 80px;
 }
 
 .hero__img img{
-    width: 600px;
-    height: 837px;
+    width: 100%;
+}
+
+/* Especialidades */
+
+.especialidades{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    padding-top: 40px;
+}
+
+.especialidade__title{
+    font-size: 64px;
+    font-family: 'Rancho', cursive;
+}
+
+.sub__title{
+    text-align: center;
+    color: #E76F51;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
 }
