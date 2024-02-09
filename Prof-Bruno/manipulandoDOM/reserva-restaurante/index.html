@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title> Formulário</title>
+  </head>
+  <body>
+  <main>
+    <div class="form container">
+      <div class="header">
+        <h2>Faça Sua Reserva</h2>
+      </div>
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="yourname">Nome</label>
+          <input
+            type="text"
+            id="yourname"
+            placeholder="Digite seu nome..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Digite seu email.." />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="phonenumber">Telefone</label>
+          <input
+            type="number"
+            id="phonenumber"
+            placeholder="Digite seu telefone..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="date-time">
+          <div class="form-control">
+            <label for="date">Data</label>
+            <input
+              type="date"
+              id="date"
+              placeholder="Data..."
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
+
+          <div class="form-control">
+            <label for="time">Hora</label>
+            <input
+              type="time"
+              id="time"
+              placeholder="Hora..."
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
+        </div>
+
+        <div class="form-control">
+          <label for="amountofpeople">Quantidade de pessoas</label>
+          <input
+            type="number"
+            id="amountofpeople"
+            placeholder="Digite a quantidade de pessoas..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="message">Mensagem</label>
+          <input
+            type="text"
+            id="message"
+            placeholder="Digite sua mensagem..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <div class="reservations container">
+      <ul>
+        <!-- <li>
+          <span class="name">Nome</span>
+          <span class="email">Email</span>
+          <span class="phonenumber">Telefone</span>
+          <span class="date">Data</span>
+          <span class="time">Hora</span>
+          <span class="amountofpeople">Quantidade de pessoas</span>
+          <span class="message">Mensagem</span>
+          <button>Remover</button>
+        </li> -->
+      </ul>
+    </div>
+  </main>
+    <script
+      src="https://kit.fontawesome.com/f9e19193d6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
