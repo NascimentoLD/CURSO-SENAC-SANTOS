@@ -102,7 +102,7 @@ strong{
     font-weight: 400;
 }
 
-button{
+.hero__btn{
     width: 165px;
     height: 50px;
     background-color: #E76F51;
@@ -117,19 +117,24 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+.hero__btn:hover{
     background-color: transparent;
     /* box-shadow: ; */
     color: #E76F51;
     border: 2px solid #E76F51;
 }
 
-.hero__text-icon{
+.hero__icon{
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
     text-align: center;
+}
+
+.hero__icon-txt{
+    font-family: "Libre Franklin";
+    font-size: 20px;
 }
 
 .img-bd{
@@ -139,20 +144,22 @@ button:hover{
 }
 
 .hero__img img{
-    width: 100%;
+    width: 600px;
+    height: 837px;
 }
 
 /* Especialidades */
 
-.especialidades{
+.specialties{
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: lightgray;
     padding-top: 40px;
 }
 
-.especialidade__title{
+.specialties__title{
     font-size: 64px;
     font-family: 'Rancho', cursive;
 }
@@ -162,4 +169,65 @@ button:hover{
     color: #E76F51;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
+}
+
+.dessert{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dessert__sub-title{
+    font-size: 24px;
+    font-family: "Josefin Sans";
+    color: #E76F51;
+}
+
+.dessert__description{
+    color: #000;
+    font-family: "Josefin Sans";
+    font-size: 42px;
+    margin-top: 30px;
+    padding: 16px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.dissert__paragraph{
+    color: #333;
+    font-family: "Libre Franklin";
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.dissert__price{
+    color: #000;
+    font-family: "Libre Franklin";
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.dissert__btn{
+    width: 170px;
+    height: 40px;
+    color: #ffffff;
+    background-color: #2A9D8F;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.dissert__btn:hover{
+    color: #2A9D8F;
+    background-color: transparent;
+    border: 2px solid #2A9D8F;
+}
+
+.lunch{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 80px;
 }
