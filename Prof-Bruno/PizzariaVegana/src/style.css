@@ -48,6 +48,7 @@ header{
 
 /* PRIMEIRA SESSÃO */
 .hero{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -230,4 +231,138 @@ strong{
     align-items: center;
     justify-content: space-around;
     padding-top: 80px;
+}
+
+/* Section Menu */
+
+.menu__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.menu__section-title{
+    font-family: 'Rancho', cursive;
+    font-size: 64px;
+    margin-top: 50px;
+}
+
+.menu__section-paragraph{
+    font-family: "Libre Franklin";
+    font-size: 24px;
+    color: #E76F51;
+    margin-bottom: 50px;
+}
+
+.section-coffee{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.coffee-title{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 42px;
+}
+
+.coffee{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.coffee-itens{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.coffee-itens-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.coffee-itens-title{
+    display: flex;
+    gap: 20px;
+}
+
+.coffee-itens-sub{
+    font-family: "Libre Franklin";
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.coffee-itens-sub-paragraph{
+    font-family: "Libre Franklin";
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* Testemunho */
+
+.testemunho{
+    width: 100%;
+    height: 893px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+}
+
+
+.testemunho__txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.testemunho-paragraph{
+    color: #E76F51;
+    font-family: "Josefin Sans";
+    font-size: 24px;
+}
+
+.testemunho-title{
+    font-family: Rancho;
+    font-size: 64px;
+}
+
+.testemunho__img{
+    width: 1200px;
+    height: 566px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/pexels-ella-olsson-1640770\ 1.png);
+}
+
+.testemunho__img-itens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.testemunho__img-itens p {
+    color: #FFF;
+    font-family: "Libre Franklin";
+    font-size: 36px;
+}
+
+.testemunho__img-itens h3{
+    color: #FFF;
+    font-family: "Josefin Sans";
+    font-size: 24px;
+}
+
+.testemunho-ellipse{
+    display: flex;
+    gap: 90px;
 }
