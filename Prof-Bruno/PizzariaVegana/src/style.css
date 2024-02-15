@@ -22,7 +22,7 @@ header{
     align-items: center;
 }
 
-.menu{
+.nav-bar{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -31,12 +31,12 @@ header{
     font-size: 20px;
 }
 
-.menu a{
+.nav-bar a{
     text-decoration: none;
     color: #000000;
 }
 
-.menu a:hover{
+.nav-bar a:hover{
     color: #E76F51;
 }
 
@@ -235,7 +235,7 @@ strong{
 
 /* Section Menu */
 
-.menu__section{
+.menu{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -243,20 +243,20 @@ strong{
     margin-bottom: 50px;
 }
 
-.menu__section-title{
+.menu-title{
     font-family: 'Rancho', cursive;
     font-size: 64px;
     margin-top: 50px;
 }
 
-.menu__section-paragraph{
+.menu-paragraph{
     font-family: "Libre Franklin";
     font-size: 24px;
     color: #E76F51;
     margin-bottom: 50px;
 }
 
-.section-coffee{
+.menu-coffee{
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -265,6 +265,7 @@ strong{
 .coffee-title{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 42px;
+    text-align: center;
 }
 
 .coffee{
@@ -305,36 +306,35 @@ strong{
 
 /* Testemunho */
 
-.testemunho{
+.comments{
     width: 100%;
     height: 893px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid black;
 }
 
 
-.testemunho__txt{
+.comments__txt{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
 }
 
-.testemunho-paragraph{
+.comments-paragraph{
     color: #E76F51;
     font-family: "Josefin Sans";
     font-size: 24px;
 }
 
-.testemunho-title{
+.comments-title{
     font-family: Rancho;
     font-size: 64px;
 }
 
-.testemunho__img{
+.comments__img{
     width: 1200px;
     height: 566px;
     display: flex;
@@ -343,26 +343,305 @@ strong{
     background-image: url(../img/pexels-ella-olsson-1640770\ 1.png);
 }
 
-.testemunho__img-itens{
+.comments__img-itens{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 60px;
 }
 
-.testemunho__img-itens p {
+.comments__img-itens p {
     color: #FFF;
     font-family: "Libre Franklin";
     font-size: 36px;
 }
 
-.testemunho__img-itens h3{
+.comments__img-itens h3{
     color: #FFF;
     font-family: "Josefin Sans";
     font-size: 24px;
 }
 
-.testemunho-ellipse{
+.comments-ellipse{
     display: flex;
     gap: 90px;
+}
+
+/* Chefes */
+
+.bosses{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.bosses-paragraph{
+    color: #E76F51;
+    font-family: "Josefin Sans";
+    font-size: 24px;
+    text-align: center;
+}
+
+.bosses-title{
+    font-family: Rancho;
+    font-size: 64px;
+}
+
+.bosses__person{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.bosses-rodrigo{
+    width: 350px;
+    height: 600px;
+    background-image: url(../img/pexels-вадим-маркин-2102934\ 1.png);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.bosses-maria{
+    width: 350px;
+    height: 600px;
+    background-image: url(../img/pexels-ketut-subiyanto-4353583\ 1.png);    
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.bosses-fabiano{
+    width: 350px;
+    height: 600px;
+    background-image: url(../img/pexels-miquel-ferran-gomez-figueroa-3814446\ 1.png);    
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.about{
+    background-color: #ffffff;
+    width: 230px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.about-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-txt__title{
+    color: #333;
+    font-family: "Libre Franklin";
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.about-txt__paragraph{
+    color: #333;
+    font-family: "Libre Franklin";
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.social-midia{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #0A66C2;
+}
+
+/* Reservation */
+
+.reservation{
+    margin-top: 50px;
+    width: 100%;
+    height: 940px;
+    background-image: url(../img/pexels-ketut-subiyanto-4350114\ \(1\)\ 1.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 50px;
+}
+
+.reservation-paragraph{
+    color: #E76F51;
+    font-family: "Josefin Sans";
+    font-size: 24px;
+    text-align: center;
+}
+
+.reservation-title{
+    color: #FFF;
+    font-family: Rancho;
+    font-size: 64px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.informs{
+    width: 430px;
+    height: 800px;
+    background-color: #000000CC;
+    padding: 50px 0;
+}
+
+.form-control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.datatime{
+    width: 160px;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    text-transform: uppercase;
+    width: 350px;
+    height: 42px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+textarea{
+    width: 350px;
+    text-transform: uppercase;
+}
+
+.form-control button{
+    width: 350px;
+    height: 45px;
+    font-family: "Libre Franklin";
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #2A9D8F;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.form-control button:hover{
+    color: #2A9D8F;
+    border: 1px solid #2A9D8F;
+    background-color: transparent;
+}
+
+/* Footer */
+footer{    
+    width: 100%;
+    height: 650px;    
+    background: #333;
+    padding-top: 70px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+    font-family: "Libre Franklin";
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.rest{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+    height: 468px;
+}
+
+.rest-title{
+    color: #FEFEFE;
+    font-family: Rancho;
+    font-size: 64px;
+}
+
+.rest-social-midia{
+    display: flex;
+    justify-content: space-between;
+    font-size: 50px;
+}
+
+/* Footer - Horarios */
+
+.schedules{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    height: 468px;
+}
+
+.schedules-itens{
+    display: flex;
+    gap: 16px;
+}
+
+.orange{
+    color: #E76F51;
+    font-family: "Josefin Sans";
+    font-size: 24px;
+    border-bottom: 1px solid #ffffff;
+    width: 155px;
+    padding-bottom: 16px;
+}
+
+.telephone h2{
+    padding-top: 32px;
+}
+
+.number{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-top: 16px;
+}
+
+.fa-phone-volume{
+    font-size: 38px;
+}
+
+/* Footer Address */
+
+.address-icon{
+    display: flex;
+    gap: 16px;
+    padding: 20px 0;
+}
+
+.fa-location-dot{
+    font-size: 38px;
+}
+
+.maps{
+    background-image: url(../img/Mapa.png);
+    width: 300px;
+    height: 300px;
+}
+
+.footer-paragraph{
+    color: rgba(255, 255, 255, 0.90);
+    font-family: "Libre Franklin";
+    font-size: 18px;
+    text-align: center;
+    margin-top: 50px;
 }
