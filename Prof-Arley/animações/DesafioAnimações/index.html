@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            /* animation-name: animaDesafio; */
+            position: relative;
+            animation-duration: 5s;            
+            -o-animation-delay: 3s;
+            animation-iteration-count: 2;
+            animation-fill-mode: both;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes animaDesafio{
+            0%{
+                background-color: #dc143c;
+                top: 0;
+                left: 0;
+            }
+
+            25% {
+                background-color: rgb(0, 175, 38);
+                top: 0;
+                left: 200px;
+            }
+
+            50%{
+                background-color: rgb(0, 26, 255);
+                top: 200px;
+                left: 200px;
+            }
+
+            70%{
+                background-color: rgb(0, 247, 255);
+                top: 200px;
+                left: 0;
+            }
+
+            100%{
+                background-color: #dc143c;
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        item 01
+    </div>
+</body>
+</html>

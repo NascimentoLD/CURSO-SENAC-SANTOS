@@ -1,0 +1,33 @@
+.container{
+    display: grid;
+    gap: 20px 60px; /* Primeiro Linha, Segundo Colunas */
+    grid-template-columns: repeat(2, 1fr 200px);
+}
+
+.item1{
+    background-color: aqua;
+}
+
+.item2{
+    background-color: blue;
+}
+
+.item3{
+    background-color: rgb(255, 0, 0);
+}
+
+.item4{
+    background-color: rgb(189, 192, 0);
+}
+
+.item5{
+    background-color: rgb(247, 0, 255);
+}
+
+.item6{
+    background-color: blueviolet;
+}
+
+.item7{
+    background-color: gray;
+}
