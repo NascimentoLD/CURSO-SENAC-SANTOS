@@ -1,7 +1,9 @@
 .container{
     display: grid;
-    gap: 20px 60px; /* Primeiro Linha, Segundo Colunas */
     grid-template-columns: repeat(2, 1fr 200px);
+    grid-template-rows: 200px;
+    gap: 20px 20px; /* Primeiro Linha, Segundo Colunas */
+    grid-auto-rows: 200px;
 }
 
 .item1{
@@ -10,6 +12,8 @@
 
 .item2{
     background-color: blue;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 .item3{
@@ -30,4 +34,24 @@
 
 .item7{
     background-color: gray;
+}
+
+.item8{
+    background-color: rgb(102, 0, 105);
+}
+
+.item9{
+    background-color: rgb(0, 95, 139);
+}
+
+.item10{
+    background-color: rgb(94, 0, 0);
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.item11{
+    background-color: chartreuse;
+    grid-column-start: 1;
+    grid-column-end: 5;
 }

@@ -1,0 +1,140 @@
+h2{
+    font-size: 32px;
+    margin: 100px 0;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100px;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.item1{
+    background-color: blue;
+}
+
+.item2{
+    background-color: blue;
+}
+
+.item3{
+    background-color: blue;
+}
+
+.item4{
+    background-color: blue;
+}
+
+.item5{
+    background-color: rgb(255, 0, 0);
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
+.item6{
+    background-color: blue;
+}
+
+.item7{
+    background-color: rgb(31, 134, 0);
+    grid-row: 1 / 5;
+    grid-column: 3 / 4;
+}
+
+.item8{
+    background-color: blue;
+}
+
+.item9{
+    background-color: blue;
+}
+
+.item10{
+    background-color: blue;
+}
+
+.item11{
+    background-color: blue;
+}
+
+/* GRID AREA */
+
+.container-ex03{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100px;
+    grid-template-areas: 
+    "um dois sete tres"
+    "quatro seis sete oito"
+    "nove dez sete onze"
+    "cinco cinco sete .";
+    color: #fff;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.item12{
+    background-color: blue;
+    grid-area: um;
+}
+
+.item13{
+    background-color: blue;
+    grid-area: dois;
+}
+
+.item14{
+    background-color: blue;
+    grid-area: tres;
+}
+
+.item15{
+    background-color: blue;
+    grid-area: quatro;
+}
+
+.item16{
+    background-color: rgb(255, 0, 0);
+    grid-area: cinco;
+}
+
+.item17{
+    background-color: blue;
+    grid-area: seis;
+}
+
+.item18{
+    background-color: rgb(30, 129, 0);
+    grid-area: sete;
+}
+
+.item19{
+    background-color: blue;
+    grid-area: oito;
+}
+
+.item20{
+    background-color: blue;
+    grid-area: nove;
+}
+
+.item21{
+    background-color: blue;
+    grid-area: dez;
+}
+
+.item22{
+    background-color: blue;
+    grid-area: onze;
+}
