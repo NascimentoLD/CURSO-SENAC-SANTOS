@@ -1,0 +1,36 @@
+[
+    {
+        "imagem": "Card-burger-2" ,
+        "especificacao": "Queridinho da casa" ,
+        "nome": "Cheddar Burguer" ,
+        "preco": "R$30,00"
+    }
+    ,
+    {
+        "imagem": "Card-burger-3" ,
+        "especificacao": "O mais saboroso!" ,
+        "nome": "Burguer Bacon" ,
+        "preco": "R$35,50"
+    }
+    ,
+    {
+        "imagem": "Card-burger-4" ,
+        "especificacao": "Tradicional" ,
+        "nome": "Texa Burguer" ,
+        "preco": "R$25,50"
+    }
+    ,
+    {
+        "imagem": "Card-burger-1" ,
+        "especificacao": "Tradicional" ,
+        "nome": "Texa Burguer" ,
+        "preco": "R$25,50"
+    }
+    ,
+    {
+        "imagem": "Card-burger-3" ,
+        "especificacao": "Tradicional" ,
+        "nome": "Texa Burguer" ,
+        "preco": "R$25,50"
+    }
+]

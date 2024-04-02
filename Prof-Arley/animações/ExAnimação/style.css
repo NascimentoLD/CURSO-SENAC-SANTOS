@@ -73,7 +73,7 @@ section h2{
     gap: 16px;
     width: 60px;
     margin: 0 auto;
-    transition: border-left 1s ease-in;
+    transition: border-left 0.5s ease-in;
 }
 
 .btn-logar:hover{
@@ -136,14 +136,14 @@ section h2{
 
 .btn-enviar1:hover::after{
     animation-name: voar;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-fill-mode: both;
 }
 
 .btn-enviar1:hover{
     animation-name: btn-transform;
-    animation-duration: 1s;
-    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-delay: 1.5s;
     animation-fill-mode: both;
 }
 

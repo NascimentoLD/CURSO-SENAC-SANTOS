@@ -1,0 +1,160 @@
+@media screen and (min-width: 320px)  {
+    /* ----- HEADER MOBILE ----- */
+    .header-content{
+        justify-content: space-around;
+    }
+   
+    .header-navbar ul li a, .header-btn{
+        display: none;
+    }
+
+    .header-navbar img{
+        width: 132px;
+    }
+
+    .header-menu{
+        display: block;
+        color: var(--white);
+    }
+
+    .header-menu .fa-bars{
+        font-size: 32px;
+    }
+
+    /* ----- SECTION HERO ----- */
+    .hero{
+        flex-wrap: wrap;
+    }
+
+    .hero-txt{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 80px;
+        margin: 0 auto;
+    }
+
+    .hero-txt h2{
+        width: 349px;
+        font-size: 44px;
+        line-height: 51px;
+        text-align: center;
+    }
+
+    .hero-txt h2 > img{
+        width: 45px;
+    }
+
+    .hero-txt p{
+        width: 369px;
+        height: 66px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .hero-txt a{
+        width: 265px;
+        height: 50px;
+    }
+
+    .hero-img-burguer{
+        width: 290px;        
+        height: 290px;
+        margin: 0 auto;
+        position: relative;
+        top: 0;
+    }
+
+    }.hero-img-burguer img{
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    /* ----- SECTION SEARCH BAR */
+
+    .search-bar{
+        width: 100%;
+        margin-top: 80px;
+        padding: 80px 20px 20px 20px;
+    }
+
+    .search-bar-txt{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+    }
+
+    .search-bar-txt h2{
+        width: 344px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .search-sides{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .search-sides-left input, .search-sides-right select{
+        font-size: 20px;
+        text-align: center;
+        width: 344px;
+        height: 67px;
+    }
+
+    /* ----- SECTION BURGUERS */
+
+    .burguers-content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .burguers-back{
+        width: 100%;
+        margin: 0 auto;
+        padding: 25px;
+    }
+
+    .burguers-back .burguers-back-light, .burguers-back-dark{
+        width: 100%;
+    }
+
+    /* ----- FOOTER ----- */
+
+    footer .footer-content{
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .footer-content-img img{
+        width: 100px;
+    }
+    
+    .redes-sociais{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+    }
+    
+    .redes-sociais .fa-brands{
+        color: #ffffff;
+        font-size: 24px;
+        transition: color 0.5s;
+    }
+    
+    .redes-sociais .fa-brands:hover{
+        color: var(--orange);
+        cursor: pointer;
+        padding-bottom: 0;
+    }
