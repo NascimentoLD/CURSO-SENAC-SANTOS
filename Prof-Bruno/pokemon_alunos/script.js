@@ -6,6 +6,7 @@ let pikachu = document.querySelector('.imagemA');
 let logo = document.querySelector('.imagemLOGO');
 pikachu.addEventListener('click', () => {
     choque.style.display = 'block'
+    avisoRemove.style.display = 'none'
     choque.play()
 })
 
@@ -16,7 +17,8 @@ let folha = document.querySelector('.folha');
 let bulbasauro = document.querySelector('.imagemB');
 bulbasauro.addEventListener('click', () => {
     folha.style.display = 'block'
-        folha.play()
+    avisoRemove.style.display = 'none'
+    folha.play()
 });
 
 // CHARMANDER
@@ -24,6 +26,7 @@ let fogo = document.querySelector(".fogo");
 let charmander = document.querySelector(".imagemC");
 charmander.addEventListener("click", () => {
     fogo.style.display = "block";
+    avisoRemove.style.display = 'none'
     fogo.play();
 });
 
@@ -32,6 +35,7 @@ let fanta = document.querySelector(".fantasma");
 let gengar = document.querySelector(".imagemE");
 gengar.addEventListener("click", () => {
     fanta.style.display = "block";
+    avisoRemove.style.display = 'none'
     fanta.play();
 })
 
@@ -40,6 +44,7 @@ let agua = document.querySelector(".agua");
 let gyarados = document.querySelector(".imagemD");
 gyarados.addEventListener("click", () => {
     agua.style.display = "block";
+    avisoRemove.style.display = 'none'
     agua.play();
 });
 
@@ -48,10 +53,12 @@ let drago = document.querySelector(".dragao");
 let dragonite = document.querySelector(".imagemF");
 dragonite.addEventListener("click", () => {
     drago.style.display = "block"
+    avisoRemove.style.display = 'none'
     drago.play();
 });
 
 let aviso = document.querySelector(".aviso");
+let avisoRemove = document.querySelector('.aviso');
 
 function aoCarregar() {
     pikachu.style.transform = 'scale(1.1)'
