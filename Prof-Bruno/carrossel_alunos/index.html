@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Cards-Carrossel</title>
+</head>
+
+<body>
+    <div class="container">
+        <a class="prev" href="#" onclick="addSlides(-1)">
+            <span>&#10094;</span>
+            <span class="prev-text">Voltar</span>
+        </a>
+        <div>
+            <div class="slides fade">
+                <img src="assets/slide1.png" />
+                <h2 class="title">LUZ E ALEGRIA</h2>
+                <p class="content">O natal representa esperança, pois Cristo nasceu para iluminar nossas vidas.</p>
+            </div>
+            <div class="slides fade">
+                <img src="assets/slide2.png" />
+                <h2 class="title">AMOR E BONDADE</h2>
+                <p class="content">Que o espírito de Natal aqueça não apenas nossas casas, mas também nossas almas.</p>
+            </div>
+            <div class="slides fade">
+                <img src="assets/slide3.png" />
+                <h2 class="title">FELIZ NATAL</h2>
+                <p class="content">Desejo um Natal brilhante de alegria, solidariedade, união e muito amor!<br/><br/>
+                    <span>(...)</span>
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <button class="button" onclick="addSlides(1)">Próximo</button>
+            <div class="dot-box">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+    <script src="handle.js"></script>
+</body>
+
+</html>
